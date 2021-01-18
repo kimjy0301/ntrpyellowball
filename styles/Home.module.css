@@ -116,10 +116,13 @@
 }
 
 .slider {
-  background-color: #336699 !important;
+  background-color: #193f66 !important;
   padding-top: 3rem;
   padding-bottom: 3rem;
   height: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: white;
 }
 
 .slider button {

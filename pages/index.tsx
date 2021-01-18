@@ -13,7 +13,7 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1 className={styles.title}>노란공테니스 NTRP</h1>
-          <h3>개발중</h3>
+          <h3>개발중...</h3>
         </main>
 
         <footer className={styles.footer}>
