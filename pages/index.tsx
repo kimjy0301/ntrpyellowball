@@ -7,7 +7,7 @@ export default function Home() {
     <Layout>
       <div className={styles.container}>
         <Head>
-          <title>Create Next App TEST</title>
+          <title>노란공테니스 NTRP</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -18,7 +18,7 @@ export default function Home() {
 
         <footer className={styles.footer}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://band.us/band/55139316"
             target="_blank"
             rel="noopener noreferrer"
           >
