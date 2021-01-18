@@ -7,9 +7,10 @@ const Header = () => {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <Link href="/test">
-        <a>Test</a>
+      <Link href="/forehand">
+        <a>포핸드</a>
       </Link>
+      <a href="https://band.us/band/55139316">Band</a>
     </div>
   );
 };
