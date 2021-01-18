@@ -115,6 +115,38 @@
   height: 1em;
 }
 
+.slider {
+  background-color: #336699 !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 100%;
+}
+
+.slider button {
+  background-color: transparent;
+  border: none;
+  font-size: 8rem;
+}
+.slider button:focus {
+  outline: none;
+}
+.yes:hover {
+  color: #9fc01c;
+}
+.yes {
+  color: #c6ed2c;
+}
+.no {
+  color: #993300;
+}
+.no:hover {
+  color: #862d01;
+}
+
+.slide {
+  background-color: none !important;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
