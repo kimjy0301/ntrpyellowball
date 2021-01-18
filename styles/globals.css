@@ -4,8 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #336699;
-  color: #fefff3;
+  background-color: #fefff3;
+  color: #02172c;
 }
 
 a {
@@ -15,4 +15,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.carousel.carousel-slider {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
