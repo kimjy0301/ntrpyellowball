@@ -105,6 +105,15 @@ body {
   @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
 }
 
+.ball {
+  @apply transition-all duration-300;
+}
+.btn-menu:hover > .ball {
+  right: 0.4rem;
+  left: 0.4rem;
+  @apply rotate-12;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

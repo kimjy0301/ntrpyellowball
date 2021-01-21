@@ -48,48 +48,72 @@ const Home = (props: HomeProps) => {
                 e.preventDefault();
                 router.push("/forehand");
               }}
-              className="group 2xl:h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
+              className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
             >
-              <img src={`img/forehand2.png`} className="h-16 relative"></img>
+              <img
+                src={`BI-img.png`}
+                className="h-16 -inset-x-12 relative ball transform"
+              ></img>
               <span className="text-2xl text-stroke-green">
                 포핸드 스트로크
               </span>
             </div>
 
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
-              <img src={`img/backhand2.png`} className="h-16 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-2xl text-stroke-green">
                 백핸드 스트로크
               </span>
             </div>
 
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
-              <img src={`img/volley3.png`} className="h-16 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-2xl text-stroke-green">포핸드 발리</span>
             </div>
 
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
-              <img src={`img/volley4.png`} className="h-16 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-2xl text-stroke-green">백핸드 발리</span>
             </div>
 
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg ">
-              <img src={`img/serve2.png`} className="h-16 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg ">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-2xl text-stroke-green">서브 & 리턴</span>
             </div>
 
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
-              <img src={`img/smash2.png`} className="h-16 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-2xl text-stroke-green">로브 & 스매시</span>
             </div>
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
-              <img src={`img/gaming.png`} className="h-16 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-xl text-stroke-green">
                 테니스 운영 능력
               </span>
             </div>
-            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
-              <img src={`img/passion.png`} className="h-14 relative "></img>
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img
+                src={`BI-img.png`}
+                className="h-16 relative -inset-x-12 ball transform"
+              ></img>
               <span className="text-xl text-stroke-green">
                 나의 테니스 열정
               </span>
