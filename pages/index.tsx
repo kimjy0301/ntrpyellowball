@@ -28,7 +28,7 @@ const Home = (props: HomeProps) => {
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
             <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
             <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
-              <h1 className="text-2xl ">노란공테니스 YTRP</h1>
+              <h1 className="text-2xl font-semibold">노란공테니스 YTRP</h1>
               <h1 className="text-sm tracking-normal">
                 (Yellowball Tennis Rating Program)
               </h1>
@@ -48,9 +48,9 @@ const Home = (props: HomeProps) => {
                 e.preventDefault();
                 router.push("/forehand");
               }}
-              className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
+              className="group 2xl:h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
             >
-              <img src={`img/forehand2.png`} className="h-16 relative "></img>
+              <img src={`img/forehand2.png`} className="h-16 relative"></img>
               <span className="text-2xl text-stroke-green">
                 포핸드 스트로크
               </span>

@@ -15,7 +15,7 @@ const index = () => {
   };
 
   return (
-    <div style={{ marginTop: "4rem" }}>
+    <div className="h-16">
       <div>
         <h1>Q : 볼의 컨트롤이 좋고 스핀으로 위력적인 샷을 구사 할 수 있다.</h1>
         <div>
