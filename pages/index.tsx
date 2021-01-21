@@ -28,17 +28,15 @@ const Home = (props: HomeProps) => {
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
             <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
             <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
-              <h1 className="text-2xl font-semibold">노란공테니스 YTRP</h1>
+              <h1 className="text-2xl font-semibold mt-5">노란공테니스 YTRP</h1>
               <h1 className="text-sm tracking-normal">
                 (Yellowball Tennis Rating Program)
               </h1>
+              <h1 className="mt-3">해당 프로그램은</h1>
+              <h1 className="">순수 동호인을 대상으로 하여</h1>
+              <h1 className="">자가 테니스레벨을 테스트하는 프로그램입니다.</h1>
 
-              <h1 className="mt-3">
-                해당사이트는 테니스레벨 자가테스트를 위해 만들어진 사이트입니다.
-              </h1>
-              <h1 className="mt-3">
-                원하는 버튼을 눌러 자가테스트를 시작해보세요.
-              </h1>
+              <h1 className="">원하는 버튼을 눌러 테스트를 시작해 보세요.</h1>
             </div>
           </div>
 
