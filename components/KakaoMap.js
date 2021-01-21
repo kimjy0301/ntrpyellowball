@@ -21,7 +21,7 @@ const KakaoMap = ()=>{
               let container = document.getElementById("kakaomap");
               var options = {
                 center: new kakao.maps.LatLng(37.70136758790199, 126.81675969770745),
-                level: 4
+                level: 5
             };
       
               const map = new window.kakao.maps.Map(container, options);
@@ -33,7 +33,7 @@ const KakaoMap = ()=>{
                     
                 // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
                 var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                    markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+                    markerPosition = new kakao.maps.LatLng(37.70136758790199, 126.81675969770745); // 마커가 표시될 위치입니다
 
                 // 마커를 생성합니다
                 var marker = new kakao.maps.Marker({
