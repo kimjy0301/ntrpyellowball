@@ -16,13 +16,12 @@ const KakaoMap = ()=>{
         document.body.appendChild(script);
 
         script.onload = () => {
-            console.log("!!");
             kakao.maps.load(() => {
               let container = document.getElementById("kakaomap");
-              let options = {
-                center: new kakao.maps.LatLng(37.506502, 127.053617),
-                level: 7
-              };
+              var options = {
+                center: new kakao.maps.LatLng(37.70136758790199, 126.81675969770745),
+                level: 3
+            };
       
               const map = new window.kakao.maps.Map(container, options);
            

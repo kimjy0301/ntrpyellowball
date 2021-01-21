@@ -20,6 +20,8 @@ body {
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
+  letter-spacing: 0.1rem;
+
   @apply bg-gray-100 dark:bg-gray-900 text-gray-800 font-semibold text-sm lg:text-base;
 }
 .content {
