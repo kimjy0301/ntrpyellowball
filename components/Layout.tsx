@@ -2,10 +2,10 @@ import Header from "./Header";
 
 const Layout = (props) => {
   return (
-    <>
+    <div>
       <Header></Header>
-      <div style={{ paddingTop: "2rem", height: "100%" }}>{props.children}</div>
-    </>
+      <div className="content">{props.children}</div>
+    </div>
   );
 };
 

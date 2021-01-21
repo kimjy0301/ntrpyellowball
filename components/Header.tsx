@@ -1,16 +1,40 @@
 import Link from "next/link";
-import styles from "../styles/Header.module.css";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <div className="header-div md:justify-between  to-yellow-2 text-gray-50 px-2 md:px-5">
       <Link href="/">
-        <a>Home</a>
+        <div className="flex justify-center items-center cursor-pointer">
+          <a className="w-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </div>
       </Link>
-      <Link href="/forehand">
-        <a>포핸드</a>
-      </Link>
-      <a href="https://band.us/band/55139316">Band</a>
+      <div className="flex justify-center items-center text-center">
+        <a
+          href="https://band.us/band/55139316"
+          className="pl-9 transition-all block"
+          style={{
+            backgroundImage: `url(${"/img/BAND_64.png"})`,
+            backgroundSize: "2rem",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          노란공테니스
+        </a>
+      </div>
     </div>
   );
 };
