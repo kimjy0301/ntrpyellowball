@@ -42,32 +42,36 @@ const Home = (props: HomeProps) => {
           <div className="flex justify-center items-center flex-row my-5 flex-wrap max-w-2xl mt-12 md:mt-0">
             <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-1 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img src={`img/forehand.png`} className="w-12 relative "></img>
-              <span className="text-2xl ">포핸드 스트로크</span>
+              <span className="text-2xl text-stroke-green">
+                포핸드 스트로크
+              </span>
             </div>
 
             <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img src={`img/backhand.png`} className="w-12 relative "></img>
-              <span className="text-2xl">백핸드 스트로크</span>
+              <span className="text-2xl text-stroke-green">
+                백핸드 스트로크
+              </span>
             </div>
 
             <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img src={`img/volley1.png`} className="w-12 relative "></img>
-              <span className="text-2xl">포핸드 발리</span>
+              <span className="text-2xl text-stroke-green">포핸드 발리</span>
             </div>
 
             <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img src={`img/volley2.png`} className="w-12 relative "></img>
-              <span className="text-2xl">백핸드 발리</span>
+              <span className="text-2xl text-stroke-green">백핸드 발리</span>
             </div>
 
             <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg ">
               <img src={`img/serve.png`} className="w-12 relative "></img>
-              <span className="text-2xl">서브 & 리턴</span>
+              <span className="text-2xl text-stroke-green">서브 & 리턴</span>
             </div>
 
             <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-6 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img src={`img/smash.png`} className="w-12 relative "></img>
-              <span className="text-2xl">로브 & 스매시</span>
+              <span className="text-2xl text-stroke-green">로브 & 스매시</span>
             </div>
           </div>
 
