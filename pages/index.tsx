@@ -46,6 +46,7 @@ const Home = (props: HomeProps) => {
             <div
               onClick={(e) => {
                 e.preventDefault();
+                setTimeout(() => {}, 1500);
                 router.push("/forehand");
               }}
               className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
