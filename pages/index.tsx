@@ -24,8 +24,8 @@ const Home = (props: HomeProps) => {
       </Head>
 
       <main>
-        <div className="flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8">
-          <div className="flex relative max-w-md justify-center items-center">
+        <div className="flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8 flex-wrap">
+          <div className="flex relative max-w-md justify-center items-center md:ml-5">
             <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
             <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
               <h1 className="text-2xl ">노란공테니스 NTRP</h1>
@@ -70,9 +70,17 @@ const Home = (props: HomeProps) => {
               <span className="text-2xl">로브 & 스매시</span>
             </div>
           </div>
-        </div>
-        <div className="w-full h-64 bg-red-100">
-          <KakaoMap></KakaoMap>
+
+          <div className="w-full mt-3 ">
+            <div className="mx-48 mb-3">
+              <div className="text-2xl">About 노란공테니스</div>
+              <div>경기도 고양시 일산동구 성석동 37-67</div>
+              <div>소개글 들어갈자리</div>
+            </div>
+            <div className="w-full h-64 bg-red-100">
+              <KakaoMap></KakaoMap>
+            </div>
+          </div>
         </div>
       </main>
     </>
