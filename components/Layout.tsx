@@ -6,7 +6,7 @@ const Layout = (props) => {
       <Header></Header>
       <div className="content">
         {props.children}
-        <footer className="absolute bottom-0 w-full justify-center items-end flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white p-5 border-t-2 border-white text-sm">
+        <footer className="md:absolute  relative bottom-0 w-full justify-center items-end flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white p-5 border-t-2 border-white text-sm">
           <span className="text-stroke">Powered By </span>
           <a href="https://band.us/band/55139316">
             <img
