@@ -22,6 +22,12 @@ const Header = () => {
           </a>
         </div>
       </Link>
+
+      <Link href="/">
+        <div className="flex justify-center items-center cursor-pointer transform hover:scale-110 focus:scale-110">
+          <img src={`img/BI.png`} className="h-12"></img>
+        </div>
+      </Link>
       <div className="flex justify-center items-center text-center transform hover:scale-110 focus:scale-110">
         <a
           href="https://band.us/band/55139316"
