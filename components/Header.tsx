@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header-div md:justify-between  via-yellow-2 to-green-1 text-gray-50 px-2 md:px-5 ">
       <Link href="/">
-        <div className="flex justify-center items-center cursor-pointer transform hover:scale-110 focus:scale-110">
+        <div className="flex justify-center items-center cursor-pointer transform hover:scale-110 focus:scale-110 transition-all">
           <a className="w-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Header = () => {
       </Link>
 
       <Link href="/">
-        <div className="flex justify-center items-center cursor-pointer transform hover:scale-110 focus:scale-110">
+        <div className="flex justify-center items-center cursor-pointer transform hover:scale-110 focus:scale-110 transition-all">
           <img src={`img/BI.png`} className="h-12"></img>
         </div>
       </Link>
