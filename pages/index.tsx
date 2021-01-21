@@ -22,30 +22,66 @@ const Home = (props: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex justify-center items-center flex-col">
-        <div className="h-20 flex justify-center items-center p-4 bg-btn-1 w-2/3">
-          <img src={`img/forehand.png`} className="w-12"></img>
-          <span className="text-2xl ">포핸드 스트로크</span>
-        </div>
-        <div className="h-20 flex justify-center items-center p-4 bg-btn-2 w-2/3">
-          <img src={`img/backhand.png`} className="w-12"></img>
-          <span className="text-2xl">백핸드 스트로크</span>
-        </div>
-        <div className="h-20 flex justify-center items-center p-4 bg-btn-3 w-2/3">
-          <img src={`img/volley2.png`} className="w-12"></img>
-          <span className="text-2xl">포핸드 발리</span>
-        </div>
-        <div className="h-20 flex justify-center items-center p-4 bg-btn-4 w-2/3">
-          <img src={`img/volley2.png`} className="w-12"></img>
-          <span className="text-2xl">백핸드 발리</span>
-        </div>
-        <div className="h-20 flex justify-center items-center p-4 bg-btn-5 w-2/3 ">
-          <img src={`img/serve.png`} className="w-12"></img>
-          <span className="text-2xl">서브 & 리턴</span>
-        </div>
-        <div className="h-20 flex justify-center items-center p-4 bg-btn-6 w-2/3">
-          <img src={`img/rob2.png`} className="w-12"></img>
-          <span className="text-2xl">로브 & 스매시</span>
+      <main>
+        <div className="flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8">
+          <div className="flex relative max-w-md justify-center items-center">
+            <div className="w-full h-full bg-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg"></div>
+            <div className="z-10 bg-white p-5 rounded-lg shadow-lg">
+              <h1 className="text-2xl">노란공테니스 NTRP</h1>
+              <h1 className="text-base">
+                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
+                사이트입니다.
+              </h1>{" "}
+              <h1 className="text-base">
+                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
+                사이트입니다.
+              </h1>{" "}
+              <h1 className="text-base">
+                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
+                사이트입니다.
+              </h1>{" "}
+              <h1 className="text-base">
+                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
+                사이트입니다.
+              </h1>{" "}
+              <h1 className="text-base">
+                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
+                사이트입니다.
+              </h1>
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center flex-row my-5 flex-wrap max-w-2xl mt-12 md:mt-0">
+            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-1 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img src={`img/forehand.png`} className="w-12 relative "></img>
+              <span className="text-2xl ">포핸드 스트로크</span>
+            </div>
+
+            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img src={`img/backhand.png`} className="w-12 relative "></img>
+              <span className="text-2xl">백핸드 스트로크</span>
+            </div>
+
+            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img src={`img/volley1.png`} className="w-12 relative "></img>
+              <span className="text-2xl">포핸드 발리</span>
+            </div>
+
+            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img src={`img/volley2.png`} className="w-12 relative "></img>
+              <span className="text-2xl">백핸드 발리</span>
+            </div>
+
+            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg ">
+              <img src={`img/serve.png`} className="w-12 relative "></img>
+              <span className="text-2xl">서브 & 리턴</span>
+            </div>
+
+            <div className="h-20 flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-6 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+              <img src={`img/smash.png`} className="w-12 relative "></img>
+              <span className="text-2xl">로브 & 스매시</span>
+            </div>
+          </div>
         </div>
       </main>
     </>

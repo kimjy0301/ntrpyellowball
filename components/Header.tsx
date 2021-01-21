@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="header-div md:justify-between  to-yellow-2 text-gray-50 px-2 md:px-5">
+    <div className="header-div md:justify-between  via-yellow-2 to-green-1 text-gray-50 px-2 md:px-5">
       <Link href="/">
         <div className="flex justify-center items-center cursor-pointer">
           <a className="w-10">
@@ -32,7 +32,7 @@ const Header = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          노란공테니스
+          <br></br>
         </a>
       </div>
     </div>
