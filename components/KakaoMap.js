@@ -10,8 +10,9 @@ const KakaoMap = ()=>{
         const script = document.createElement("script");
     
         script.src =
-          "//dapi.kakao.com/v2/maps/sdk.js?appkey=bceef382c68271baae2f8cb3fa08af86";
+          "//dapi.kakao.com/v2/maps/sdk.js?appkey=bceef382c68271baae2f8cb3fa08af86&autoload=false";
         script.type = "text/javascript";
+        script.autol
     
         document.body.appendChild(script);
 
