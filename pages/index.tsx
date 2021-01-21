@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client";
 import { GetStaticProps } from "next";
 import { Post } from "../prisma/model";
 import { useRouter } from "next/router";
+import KakaoMap from "../components/KakaoMap.js";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -25,28 +26,15 @@ const Home = (props: HomeProps) => {
       <main>
         <div className="flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8">
           <div className="flex relative max-w-md justify-center items-center">
-            <div className="w-full h-full bg-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg"></div>
-            <div className="z-10 bg-white p-5 rounded-lg shadow-lg">
-              <h1 className="text-2xl">노란공테니스 NTRP</h1>
-              <h1 className="text-base">
+            <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
+            <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
+              <h1 className="text-2xl ">노란공테니스 NTRP</h1>
+              <h1 className="text-base mt-3">
                 해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
                 사이트입니다.
-              </h1>{" "}
-              <h1 className="text-base">
-                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
-                사이트입니다.
-              </h1>{" "}
-              <h1 className="text-base">
-                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
-                사이트입니다.
-              </h1>{" "}
-              <h1 className="text-base">
-                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
-                사이트입니다.
-              </h1>{" "}
-              <h1 className="text-base">
-                해당사이트는 노란공테니스 NTRP 자가테스트를 위해 만들어진
-                사이트입니다.
+              </h1>
+              <h1 className="text-base mt-3">
+                원하는 버튼을 눌러 자가테스트를 시작하세요.
               </h1>
             </div>
           </div>
@@ -82,6 +70,9 @@ const Home = (props: HomeProps) => {
               <span className="text-2xl">로브 & 스매시</span>
             </div>
           </div>
+        </div>
+        <div className="w-full h-64 bg-red-100">
+          <KakaoMap></KakaoMap>
         </div>
       </main>
     </>
