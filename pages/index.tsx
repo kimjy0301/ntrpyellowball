@@ -72,7 +72,7 @@ const Home = (props: HomeProps) => {
           </div>
 
           <div className="w-full mt-3 ">
-            <div className="mx-48 mb-3">
+            <div className="ml-5 mb-3">
               <div className="text-2xl">About 노란공테니스</div>
               <div>경기도 고양시 일산동구 성석동 37-67</div>
               <div>소개글 들어갈자리</div>
