@@ -33,10 +33,10 @@ const Home = (props: HomeProps) => {
                 (Yellowball Tennis Rating Program)
               </h1>
 
-              <h1 className="text-base mt-3">
+              <h1 className="mt-3">
                 해당사이트는 테니스레벨 자가테스트를 위해 만들어진 사이트입니다.
               </h1>
-              <h1 className="text-base mt-3">
+              <h1 className="mt-3">
                 원하는 버튼을 눌러 자가테스트를 시작해보세요.
               </h1>
             </div>
