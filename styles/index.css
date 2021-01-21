@@ -24,6 +24,9 @@ body {
 
   @apply bg-gray-100 dark:bg-gray-900 text-gray-800 font-semibold text-sm lg:text-base;
 }
+.footer {
+  z-index: 9999;
+}
 .content {
   height: calc(100vh - 3rem);
   margin-top: 3rem;
