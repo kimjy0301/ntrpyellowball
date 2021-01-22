@@ -45,34 +45,34 @@ const Home = (props: HomeProps) => {
                 e.preventDefault();
                 router.push("/forehand");
               }}
-              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
             >
               <span className="text-sm md:text-2xl">포핸드 스트로크</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
               <span className="text-sm md:text-2xl">백핸드 스트로크</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
               <span className="text-sm md:text-2xl">포핸드 발리</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
               <span className="text-sm md:text-2xl">백핸드 발리</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg ">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg ">
               <span className="text-sm md:text-2xl">서브 & 리턴</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
               <span className="text-sm md:text-2xl">로브 & 스매시</span>
             </div>
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
               <span className="text-sm md:text-2xl">테니스 운영 능력</span>
             </div>
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2 rounded-md items-center p-4  w-1/2 md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
               <span className="text-sm md:text-2xl">나의 테니스 열정</span>
             </div>
           </div>
