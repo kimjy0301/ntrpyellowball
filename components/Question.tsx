@@ -5,8 +5,10 @@ const Question = ({ question, onClickYes, onClickNo, show }) => {
 
   useEffect(() => {
     setLoaded(true);
-  }, []);
+  }, [loaded]);
 
+  
+Question
   if (show === false) {
     return <></>;
   } else {
@@ -17,9 +19,10 @@ const Question = ({ question, onClickYes, onClickNo, show }) => {
             loaded ? "opacity-100" : "opacity-0"
           } duration-700 w-96 flex relative flex-col h-48 md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1 transition-all`}
         >    
+       
           {question.split('\n').map((value)=>{
             return (<span className="text-xl">{value}</span>)
-          })}
+          })}          
           <div className="w-full border-t-2 my-3 border-gray-100 "></div>
           <div className="flex">
             <div
