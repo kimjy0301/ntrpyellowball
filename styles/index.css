@@ -115,6 +115,21 @@ body {
   @apply rotate-12;
 }
 
+@keyframes hover-scale {
+  0% {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+  }
+  50% {
+    --tw-scale-x: 2.1;
+    --tw-scale-y: 2.1;
+  }
+  100% {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+  }
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
