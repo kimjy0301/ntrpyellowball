@@ -22,13 +22,13 @@ const Question = ({ question, onClickYes, onClickNo, show }) => {
           <div className="flex">
             <div
               onClick={() => onClickYes()}
-              className="bg-blue-500 py-2 px-10 hover:bg-blue-700 cursor-pointer transition-all mx-3 shadow-lg rounded"
+              className="bg-blue-500 py-2 px-10 flex items-center justify-center hover:bg-blue-700 cursor-pointer transition-all mx-3 shadow-lg rounded"
             >
               <span className="text-white text-5xl font-extrabold">O</span>
             </div>
             <div
               onClick={() => onClickNo()}
-              className=" bg-red-500 py-2 px-10 hover:bg-red-700 cursor-pointer transition-all mx-3 shadow-lg rounded"
+              className=" bg-red-500 py-2 px-10 flex items-center justify-center hover:bg-red-700 cursor-pointer transition-all mx-3 shadow-lg rounded"
             >
               <span className="text-white text-5xl font-extrabold">X</span>
             </div>
