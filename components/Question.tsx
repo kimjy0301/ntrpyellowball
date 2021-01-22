@@ -18,7 +18,7 @@ const Question = ({ question, onClickYes, onClickNo, show }) => {
           } duration-500 w-96 flex relative flex-col h-48 md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1 transition-all`}
         >
           <span className="text-xl">{question}</span>
-          <div className="w-full border-t-2 my-2 border-gray-100 "></div>
+          <div className="w-full border-t-2 my-3 border-gray-100 "></div>
           <div className="flex">
             <div
               onClick={() => onClickYes()}
