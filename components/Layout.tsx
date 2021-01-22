@@ -2,11 +2,7 @@ import Header from "./Header";
 
 const Layout = (props) => {
   return (
-    <div
-      onTouchStart={() => {
-        console.log("touch");
-      }}
-    >
+    <div>
       <Header></Header>
       <div className="content">{props.children}</div>{" "}
       <footer className="h-20 fixed bottom-0 w-full justify-center items-end flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white p-5 border-t-2 border-white text-sm">
