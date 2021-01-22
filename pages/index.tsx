@@ -24,7 +24,7 @@ const Home = (props: HomeProps) => {
       </Head>
 
       <div className="h-full overflow-y-scroll md:flex md:justify-center md:items-center md:-mt-14">
-        <div className="flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8 flex-wrap">
+        <div className="h-full flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8 flex-wrap">
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
             <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
             <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
