@@ -6,7 +6,7 @@ const Question = ({ question, onClickYes, onClickNo, show }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 250);    
+    }, 200);    
   }, []);
 
 Question
