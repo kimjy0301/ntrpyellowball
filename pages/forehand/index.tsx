@@ -4,7 +4,7 @@ import { useState } from "react";
 import Head from "next/head";
 
 const index = () => {
-  const [questionIndex, setQuestionIndex] = useState(10);
+  const [questionIndex, setQuestionIndex] = useState(1);
 
   const onClickYes = () => {
     if (questionIndex + 1 !== questions.length)
