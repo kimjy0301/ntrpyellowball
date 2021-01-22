@@ -23,7 +23,7 @@ const Home = (props: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div className="h-full overflow-y-scroll md:flex md:justify-center md:items-center md:-mt-14">
         <div className="flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8 flex-wrap">
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
             <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
@@ -39,87 +39,93 @@ const Home = (props: HomeProps) => {
               <h1 className="">원하는 버튼을 눌러 테스트를 시작해 보세요.</h1>
             </div>
           </div>
-
           <div className="flex justify-center items-center flex-row my-5 flex-wrap max-w-2xl mt-12 md:mt-0">
             <div
               onClick={(e) => {
                 e.preventDefault();
-                setTimeout(() => {}, 1500);
                 router.push("/forehand");
               }}
-              className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
+              className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg"
             >
               <img
                 src={`BI-img.png`}
                 className="h-16 -inset-x-12 relative ball transform"
               ></img>
-              <span className="text-2xl text-stroke-green">
+              <span className="text-sm md:text-2xl text-stroke-green">
                 포핸드 스트로크
               </span>
             </div>
 
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-2 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-2xl text-stroke-green">
+              <span className="text-sm md:text-2xl text-stroke-green">
                 백핸드 스트로크
               </span>
             </div>
 
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-2xl text-stroke-green">포핸드 발리</span>
+              <span className="text-sm md:text-2xl text-stroke-green">
+                포핸드 발리
+              </span>
             </div>
 
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-3 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-2xl text-stroke-green">백핸드 발리</span>
+              <span className="text-sm md:text-2xl text-stroke-green">
+                백핸드 발리
+              </span>
             </div>
 
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg ">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg ">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-2xl text-stroke-green">서브 & 리턴</span>
+              <span className="text-sm md:text-2xl text-stroke-green">
+                서브 & 리턴
+              </span>
             </div>
 
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-4 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-2xl text-stroke-green">로브 & 스매시</span>
+              <span className="text-sm md:text-2xl text-stroke-green">
+                로브 & 스매시
+              </span>
             </div>
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-xl text-stroke-green">
+              <span className="text-sm md:text-2xl text-stroke-green">
                 테니스 운영 능력
               </span>
             </div>
-            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-full md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
+            <div className="h-20 btn-menu overflow-hidden flex md:m-3 md:w-72 md:shadow-lg justify-between items-center p-4 from-btn-5 to-yellow-1 bg-gradient-to-br w-1/2 md:max-w-xs cursor-pointer hover:from-yellow-1 transition-all hover:shadow-lg">
               <img
                 src={`BI-img.png`}
                 className="h-16 relative -inset-x-12 ball transform"
               ></img>
-              <span className="text-xl text-stroke-green">
+              <span className="text-sm md:text-2xl text-stroke-green">
                 나의 테니스 열정
               </span>
             </div>
           </div>
 
-          <div className="w-full mt-3 ">
+          {/* <div className="w-full mt-3 ">
             <div className="ml-5 mb-3">
               <div className="text-2xl">About</div>
               <div>경기도 고양시 일산동구 성석동 37-67</div>
@@ -128,9 +134,9 @@ const Home = (props: HomeProps) => {
             <div className="w-full h-64 bg-red-100">
               <KakaoMap></KakaoMap>
             </div>
-          </div>
+          </div> */}
         </div>
-      </main>
+      </div>
     </>
   );
 };

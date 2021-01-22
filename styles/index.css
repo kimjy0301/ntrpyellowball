@@ -79,8 +79,9 @@ body {
   z-index: 9999;
 }
 .content {
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 8rem);
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .text-stroke {
