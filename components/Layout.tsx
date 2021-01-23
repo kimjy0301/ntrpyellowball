@@ -7,6 +7,10 @@ import { useEffect } from "react";
 const Layout = (props) => {
   const router = useRouter();
 
+  useEffect(() => {
+    document.addEventListener("touchstart", function () {}, true);
+  }, []);
+
   return (
     <div className="fixed w-full h-full">
       <Header></Header>
