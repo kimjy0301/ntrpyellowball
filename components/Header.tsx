@@ -28,10 +28,22 @@ const Header = () => {
           <img src={`img/BI.png`} className="h-12"></img>
         </div>
       </Link>
-      <div className="flex justify-center items-center text-center transform hover:scale-110 focus:scale-110">
+
+      <div className="flex justify-center items-center text-center">
+        <a
+          href="https://blog.naver.com/p139154"
+          className="pl-9 transition-all block  transform hover:scale-110 focus:scale-110"
+          style={{
+            backgroundImage: `url(${"/img/blog.png"})`,
+            backgroundSize: "2rem",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <br></br>
+        </a>
         <a
           href="https://band.us/band/55139316"
-          className="pl-9 transition-all block"
+          className="pl-9 transition-all block  transform hover:scale-110 focus:scale-110 ml-2"
           style={{
             backgroundImage: `url(${"/img/BAND_64.png"})`,
             backgroundSize: "2rem",
