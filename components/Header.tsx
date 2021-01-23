@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header-div md:justify-between  via-yellow-2 to-green-1 text-gray-50 px-2 md:px-5 ">
       <Link href="/">
-        <div className="flex justify-center items-center cursor-pointer transform hover-div focus:scale-110  active:scale-110 transition-all">
+        <div className="flex justify-center items-center cursor-pointer transform hover-div   active:scale-110 transition-all">
           <a className="w-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Header = () => {
       </Link>
 
       <Link href="/">
-        <div className="flex justify-center items-center cursor-pointer transform hover-div focus:scale-110 active:scale-110 transition-all">
+        <div className="flex justify-center items-center cursor-pointer transform hover-div  active:scale-110 transition-all">
           <img src={`img/BI.png`} className="h-12"></img>
         </div>
       </Link>
@@ -32,7 +32,7 @@ const Header = () => {
       <div className="flex justify-center items-center text-center">
         <a
           href="https://blog.naver.com/p139154"
-          className="pl-9 transition-all block  transform hover-div focus:scale-110 active:scale-110"
+          className="pl-9 transition-all block  transform hover-div  active:scale-110"
           style={{
             backgroundImage: `url(${"/img/blog.png"})`,
             backgroundSize: "2rem",
@@ -43,7 +43,7 @@ const Header = () => {
         </a>
         <a
           href="https://band.us/band/55139316"
-          className="pl-9 transition-all block  transform hover-div focus:scale-110 active:scale-110 ml-2"
+          className="pl-9 transition-all block  transform hover-div  active:scale-110 ml-2"
           style={{
             backgroundImage: `url(${"/img/BAND_64.png"})`,
             backgroundSize: "2rem",

@@ -21,7 +21,7 @@ const Layout = (props) => {
           <a href="https://band.us/band/55139316">
             <img
               src={`BI-vertical.png`}
-              className="h-10 ml-3 transform hover-div focus:scale-110 active:scale-110 transition-all"
+              className="h-10 ml-3 transform hover-div active:scale-110 transition-all"
             ></img>
           </a>
         </footer>
