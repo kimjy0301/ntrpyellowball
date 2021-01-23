@@ -2,9 +2,11 @@ import Header from "./Header";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { useRouter } from "next/router";
+import { useRef } from "react";
 
 const Layout = (props) => {
   const router = useRouter();
+  const footerRef = useRef(null);
 
   return (
     <div className="fixed w-full h-full">
@@ -21,7 +23,10 @@ const Layout = (props) => {
           </a>
         </footer>
       ) : (
-        <footer className="h-20 fixed bottom-0 w-full justify-center items-center flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white border-t-2 border-white text-sm">
+        <footer
+          ref={footerRef}
+          className="h-20 fixed bottom-0 w-full justify-center items-center flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white border-t-2 border-white text-sm"
+        >
           <div className="h-14 relative max-w-lg shadow-lg rounded w-2/3">
             <Carousel
               showArrows={false}
@@ -37,6 +42,9 @@ const Layout = (props) => {
                 href="https://blog.naver.com/p139154"
                 className="block h-14"
                 target="_blank"
+                onClick={() => {
+                  footerRef.current?.focus();
+                }}
               >
                 <img
                   src={`banners/banner4.png`}
@@ -48,6 +56,9 @@ const Layout = (props) => {
                 href="https://vtgtennis.modoo.at/"
                 className="block h-14"
                 target="_blank"
+                onClick={() => {
+                  footerRef.current?.focus();
+                }}
               >
                 <img
                   src={`banners/banner1.png`}
@@ -59,6 +70,9 @@ const Layout = (props) => {
                 href="http://the-tennis.com/"
                 className="block h-14"
                 target="_blank"
+                onClick={() => {
+                  footerRef.current?.focus();
+                }}
               >
                 <img
                   src={`banners/banner2.png`}
@@ -70,6 +84,9 @@ const Layout = (props) => {
                 href="https://band.us/band/61888607"
                 className="block h-14"
                 target="_blank"
+                onClick={() => {
+                  footerRef.current?.focus();
+                }}
               >
                 <img
                   alt="뉴스 더테니스"
