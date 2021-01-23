@@ -15,7 +15,7 @@ const Layout = (props) => {
           ></img>
         </a> */}
 
-        <div className="h-16 relative max-w-lg">
+        <div className="h-16 relative max-w-lg shadow-lg rounded">
           <Carousel
             showArrows={false}
             showThumbs={false}
