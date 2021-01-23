@@ -2,11 +2,10 @@ import Header from "./Header";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { useRouter } from "next/router";
-import { useRef } from "react";
+import { useEffect } from "react";
 
 const Layout = (props) => {
   const router = useRouter();
-  const footerRef = useRef(null);
 
   return (
     <div className="fixed w-full h-full">
@@ -18,15 +17,12 @@ const Layout = (props) => {
           <a href="https://band.us/band/55139316">
             <img
               src={`BI-vertical.png`}
-              className="h-10 ml-3 transform hover:scale-110 focus:scale-110 transition-all"
+              className="h-10 ml-3 transform hover-div focus:scale-110 active:scale-110 transition-all"
             ></img>
           </a>
         </footer>
       ) : (
-        <footer
-          ref={footerRef}
-          className="h-20 fixed bottom-0 w-full justify-center items-center flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white border-t-2 border-white text-sm"
-        >
+        <footer className="h-20 fixed bottom-0 w-full justify-center items-center flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white border-t-2 border-white text-sm">
           <div className="h-14 relative max-w-lg shadow-lg rounded w-2/3">
             <Carousel
               showArrows={false}
@@ -42,7 +38,6 @@ const Layout = (props) => {
                 href="https://blog.naver.com/p139154"
                 className="block h-14"
                 target="_blank"
-                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   src={`banners/banner4.png`}

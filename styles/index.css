@@ -137,6 +137,12 @@ body {
   }
 }
 
+@media (hover: hover) {
+  .hover-div:hover {
+    @apply scale-110;
+  }
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
