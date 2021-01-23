@@ -3,9 +3,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 const Layout = (props) => {
   return (
-    <div>
+    <div className="fixed w-full h-full">
       <Header></Header>
-      <div className="content">{props.children}</div>{" "}
+      <div className="content flex">{props.children}</div>{" "}
       <footer className="h-20 fixed bottom-0 w-full justify-center items-center flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white border-t-2 border-white text-sm">
         {/* <span className="text-stroke">Powered By </span>
         <a href="https://band.us/band/55139316">
