@@ -42,9 +42,7 @@ const Layout = (props) => {
                 href="https://blog.naver.com/p139154"
                 className="block h-14"
                 target="_blank"
-                onClick={() => {
-                  footerRef.current?.focus();
-                }}
+                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   src={`banners/banner4.png`}
@@ -56,9 +54,7 @@ const Layout = (props) => {
                 href="https://vtgtennis.modoo.at/"
                 className="block h-14"
                 target="_blank"
-                onClick={() => {
-                  footerRef.current?.focus();
-                }}
+                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   src={`banners/banner1.png`}
@@ -70,9 +66,7 @@ const Layout = (props) => {
                 href="http://the-tennis.com/"
                 className="block h-14"
                 target="_blank"
-                onClick={() => {
-                  footerRef.current?.focus();
-                }}
+                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   src={`banners/banner2.png`}
@@ -84,9 +78,7 @@ const Layout = (props) => {
                 href="https://band.us/band/61888607"
                 className="block h-14"
                 target="_blank"
-                onClick={() => {
-                  footerRef.current?.focus();
-                }}
+                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   alt="뉴스 더테니스"
