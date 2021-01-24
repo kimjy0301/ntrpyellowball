@@ -63,7 +63,7 @@ const Home = (props: HomeProps) => {
             </div>
 
             <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg ">
-              <span className="text-sm md:text-2xl">게임운영능력</span>
+              <span className="text-sm md:text-2xl">게임 운영능력</span>
             </div>
 
             <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
