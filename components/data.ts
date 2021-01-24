@@ -131,7 +131,7 @@ export const questions = [
   },
   {
     question:
-      "포핸드와 백핸드의 기량차이가 \n 분명히 있어 잘하는 쪽으로만 하는 편이다.",
+      "포핸드와 백핸드의 \n 기량차이가 분명히 있어 \n 잘하는 쪽으로만 하는 편이다.",
     score: "3.0",
     answer: true,
     confirm: true,
