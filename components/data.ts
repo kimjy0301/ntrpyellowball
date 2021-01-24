@@ -12,9 +12,9 @@ export const questions = [
     confirm: false,
   },
   {
-    question: "느리고 쉬운공은 맞히기는 하지만 \n  움직이는 공은 어렵다",
+    question: "아주 느리게오면 치겠는데 \n 조금만 멀거나 짧으면 못치겠다",
     score: "1.0",
-    answer: true,
+    answer: false,
     confirm: true,
   },
   {
@@ -49,8 +49,7 @@ export const questions = [
     confirm: false,
   },
   {
-    question:
-      "느리고 쉬운공은 \n 랠리도 가능하지만 \n  아직 컨트롤은 잘 안된다.",
+    question: "느리고 쉬운공은 \n 넘기기는 하지만 \n 아직 컨트롤은 잘 안된다.",
     score: "2.0",
     answer: true,
     confirm: true,
@@ -97,7 +96,7 @@ export const questions = [
   {
     question:
       "포핸드와 백핸드의 기량차이가 \n 분명히 있어 잘하는 쪽으로 하는 편이다.",
-    score: "4.0",
+    score: "3.0",
     answer: false,
     confirm: false,
   },
@@ -167,7 +166,8 @@ export const questions = [
     confirm: false,
   },
   {
-    question: "애드코트에서도 포핸드를 \n 많이 사용하고 공격적인 샷을 한다.",
+    question:
+      "애드코트에서도 \n 포핸드를 많이 사용하지만 \n 백핸드도 안정적이다..",
     score: "5.0",
     answer: false,
     confirm: true,
