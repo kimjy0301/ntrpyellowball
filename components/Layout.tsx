@@ -40,7 +40,7 @@ const Layout = (props) => {
               interval={2000}
             >
               <a
-                href="https://blog.naver.com/p139154"
+                href="https://band.us/band/55139316"
                 className="block h-14"
                 target="_blank"
               >
@@ -56,7 +56,7 @@ const Layout = (props) => {
                 target="_blank"
               >
                 <img
-                  src={`banners/banner1.jpg`}
+                  src={`banners/banner3.jpg`}
                   alt="VTG 실내테니스 아카데미"
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
@@ -79,7 +79,7 @@ const Layout = (props) => {
               >
                 <img
                   alt="뉴스 더테니스"
-                  src={`banners/banner3.jpg`}
+                  src={`banners/banner1.jpg`}
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
               </a>
