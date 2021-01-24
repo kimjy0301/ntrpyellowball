@@ -17,7 +17,7 @@ const index = () => {
   if (score === "2.0") {
     grade = "초보자";
   } else if (score === "3.0") {
-    grade = "초중급";
+    grade = "초중급자";
   } else if (score === "4.0") {
     grade = "중급자";
   } else if (score === "5.0") {
