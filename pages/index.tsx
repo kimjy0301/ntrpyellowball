@@ -50,29 +50,71 @@ const Home = (props: HomeProps) => {
               <span className="text-sm md:text-2xl">스트로크 stroke</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">발리 volley</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">서브 & 스매시</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">리턴 & 로브</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg ">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">게임 운영능력</span>
             </div>
 
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">나의 테니스 열정</span>
             </div>
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">테니스 규칙과 매너</span>
             </div>
-            <div className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg">
+            <div
+              className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/develop");
+              }}
+            >
               <span className="text-sm md:text-2xl">테니스 용어</span>
             </div>
           </div>
