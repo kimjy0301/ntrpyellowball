@@ -1,6 +1,7 @@
 export const questions2 = [
   {
-    question: "아주 느리게오면 치겠는데 \n 조금만 멀거나 짧으면 못치겠다",
+    question:
+      "아주 느리게오면 치겠는데 \n 조금만 멀거나 짧으면 못치겠다  \n 조금만 멀거나 짧으면 못치겠다",
     score: "1.0",
     answer: true,
     confirm: true,
@@ -126,14 +127,14 @@ export const questions = [
       "완전하지는 않지만 회전을 이해하고 \n 공을 긁거나 문지를 줄 안다.",
     score: "3.0",
     answer: false,
-    confirm: true,
+    confirm: false,
   },
   {
     question:
       "포핸드와 백핸드의 기량차이가 \n 분명히 있어 잘하는 쪽으로 하는 편이다.",
     score: "3.0",
     answer: false,
-    confirm: false,
+    confirm: true,
   },
   {
     question: "어느정도 방향과 길이조절이 가능하다.",

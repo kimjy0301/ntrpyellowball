@@ -47,6 +47,9 @@ const index = () => {
         setQuestionIndex(questionIndex + 1);
       }
     }
+    if (questionIndex + 1 === questions.length) {
+      router.push(`/result/forehand/?score=6.0`);
+    }
   };
 
   return (
