@@ -27,8 +27,9 @@ const Layout = (props) => {
         </footer>
       ) : (
         <footer className="h-20 fixed bottom-0 w-full justify-center items-center flex bg-gradient-to-br from-yellow-1 via-green-1 to-yellow-1 text-white border-t-2 border-white text-sm">
-          <div className="h-14 relative max-w-lg shadow-lg rounded w-2/3">
+          <div className="h-14 relative max-w-2xl shadow-lg rounded w-full">
             <Carousel
+              stopOnHover={false}
               showArrows={false}
               showThumbs={false}
               showIndicators={false}
@@ -36,7 +37,7 @@ const Layout = (props) => {
               autoPlay={true}
               transitionTime={500}
               infiniteLoop={true}
-              interval={3000}
+              interval={2000}
             >
               <a
                 href="https://blog.naver.com/p139154"
@@ -53,7 +54,6 @@ const Layout = (props) => {
                 href="https://vtgtennis.modoo.at/"
                 className="block h-14"
                 target="_blank"
-                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   src={`banners/banner1.png`}
@@ -65,7 +65,6 @@ const Layout = (props) => {
                 href="http://the-tennis.com/"
                 className="block h-14"
                 target="_blank"
-                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   src={`banners/banner2.png`}
@@ -77,7 +76,6 @@ const Layout = (props) => {
                 href="https://band.us/band/61888607"
                 className="block h-14"
                 target="_blank"
-                onMouseDown={(e) => e.preventDefault()}
               >
                 <img
                   alt="뉴스 더테니스"

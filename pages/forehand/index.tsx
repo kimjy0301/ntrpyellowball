@@ -4,14 +4,18 @@ import { useState } from "react";
 import Head from "next/head";
 
 const index = () => {
-  const [questionIndex, setQuestionIndex] = useState(1);
+  const [questionIndex, setQuestionIndex] = useState(0);
+
+  const [nowScore, setNowScore] = useState(1);
 
   const onClickYes = () => {
     if (questionIndex + 1 !== questions.length)
       setQuestionIndex(questionIndex + 1);
+    console.log(questions[questionIndex].score);
   };
   const onClickNo = () => {
     if (questionIndex !== 0) setQuestionIndex(questionIndex - 1);
+    console.log(questions[questionIndex].score);
   };
 
   return (
@@ -26,7 +30,7 @@ const index = () => {
             return (
               <Question
                 key={i}
-                question={value}
+                question={value.question}
                 onClickYes={onClickYes}
                 onClickNo={onClickNo}
                 show={true}
