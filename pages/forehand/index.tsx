@@ -23,15 +23,13 @@ const index = () => {
         nowQuestions[questionIndex].confirm === true &&
         nowQuestions[questionIndex].answer === true
       ) {
-        router.push(
-          `/result/forehand/?score=${nowQuestions[questionIndex].score}`
-        );
+        router.push(`/result/?score=${nowQuestions[questionIndex].score}`);
       } else {
         setQuestionIndex(questionIndex + 1);
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/forehand/?score=6.0`);
+      router.push(`/result/?score=6.0`);
     }
   };
   const onClickNo = () => {
@@ -40,15 +38,13 @@ const index = () => {
         nowQuestions[questionIndex].confirm === true &&
         nowQuestions[questionIndex].answer === false
       ) {
-        router.push(
-          `/result/forehand/?score=${nowQuestions[questionIndex].score}`
-        );
+        router.push(`/result/?score=${nowQuestions[questionIndex].score}`);
       } else {
         setQuestionIndex(questionIndex + 1);
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/forehand/?score=6.0`);
+      router.push(`/result/?score=6.0`);
     }
   };
 
@@ -58,7 +54,16 @@ const index = () => {
         <title>노란공테니스 YTRP - 포핸드</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className="flex flex-col justify-center items-center py-2 mx-auto h-full w-full overflow-y-auto relative">
+        <div
+          className="cursor-pointer mb-3 md:hidden transition-all transform active:scale-110"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          <img src={"img/home.png"} className="w-52"></img>
+        </div>
         {questions.map((value, i) => {
           if (questionIndex === i) {
             return (

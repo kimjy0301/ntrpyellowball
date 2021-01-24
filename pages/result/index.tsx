@@ -19,7 +19,15 @@ const index = () => {
         <title>노란공테니스 YTRP - 포핸드 결과</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full h-full flex justify-center items-center">
+      <div className="w-full h-full flex justify-center items-center flex-col">
+        <div
+          className="cursor-pointer mb-3 md:hidden transition-all transform active:scale-110"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          <img src={"img/home.png"} className="w-52"></img>
+        </div>
         <div
           className={`${
             loaded ? "opacity-100" : "opacity-0"
