@@ -58,7 +58,7 @@ const index = () => {
                   <div className="text-3xl mx-3">{score}</div>
                   <div>입니다.</div>
                 </div>
-                <span className="text-xs ml-3">{grade}등급 입니다.</span>
+                <span className="text-xs ml-3">{grade} 등급 입니다.</span>
               </div>
             </div>
           </div>
