@@ -43,7 +43,7 @@ const Header = () => {
         </a>
         <a
           href="https://band.us/band/55139316"
-          className="pl-9 transition-all block  transform hover-div  active:scale-110 ml-015"
+          className="pl-9 transition-all block  transform hover-div  active:scale-110"
           style={{
             backgroundImage: `url(${"/img/BAND_64.png"})`,
             backgroundSize: "2rem",
