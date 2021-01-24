@@ -2,46 +2,47 @@ import Question from "../../components/Question";
 import { questions } from "../../components/data";
 import { useState } from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export type Question = {
   question: string;
-  score: number;
+  score: string;
   answer: boolean;
+  confirm: boolean;
 };
 
 const index = () => {
   const [questionIndex, setQuestionIndex] = useState(0);
-
   const [nowQuestions, setNowQuestions] = useState<Question[]>(questions);
 
-  const [endTest, setEndTest] = useState(false);
+  const router = useRouter();
 
   const onClickYes = () => {
     if (questionIndex + 1 !== questions.length) {
-      setQuestionIndex(questionIndex + 1);
-      let changeAnswer = nowQuestions.map((value, i) => {
-        if (i === questionIndex) {
-          value.answer = true;
-          return value;
-        } else {
-          return value;
-        }
-      });
-      setNowQuestions(changeAnswer);
+      if (
+        nowQuestions[questionIndex].confirm === true &&
+        nowQuestions[questionIndex].answer === true
+      ) {
+        router.push(
+          `/result/forehand/?score=${nowQuestions[questionIndex].score}`
+        );
+      } else {
+        setQuestionIndex(questionIndex + 1);
+      }
     }
   };
   const onClickNo = () => {
-    if (questionIndex !== 0) {
-      setQuestionIndex(questionIndex + 1);
-      let changeAnswer = nowQuestions.map((value, i) => {
-        if (i === questionIndex) {
-          value.answer = false;
-          return value;
-        } else {
-          return value;
-        }
-      });
-      setNowQuestions(changeAnswer);
+    if (questionIndex + 1 !== questions.length) {
+      if (
+        nowQuestions[questionIndex].confirm === true &&
+        nowQuestions[questionIndex].answer === false
+      ) {
+        router.push(
+          `/result/forehand/?score=${nowQuestions[questionIndex].score}`
+        );
+      } else {
+        setQuestionIndex(questionIndex + 1);
+      }
     }
   };
 
