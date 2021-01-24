@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Question = ({ question, onClickYes, onClickNo, show }) => {
+const Question = ({ question, onClickYes, onClickNo, show, score }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,9 +17,12 @@ const Question = ({ question, onClickYes, onClickNo, show }) => {
       <>
         <div
           className={`${
-            loaded ? "opacity-100" : "opacity-0"
-          } duration-700 w-96 flex relative flex-col h-48 md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1 transition-all`}
+            loaded ? "opacity-100" : "opacity-0 "
+          } duration-700 w-96 flex relative flex-col h-56 md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1 transition-all`}
         >
+          <div className="absolute top-0 left-0 ml-1 mt-1 text-sm">
+            YTRP {score} 질문 :
+          </div>
           {question.split("\n").map((value, i) => {
             return (
               <span key={i} className="text-xl">

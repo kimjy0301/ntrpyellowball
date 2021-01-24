@@ -65,6 +65,7 @@ const index = () => {
                 onClickYes={onClickYes}
                 onClickNo={onClickNo}
                 show={true}
+                score={value.score}
               ></Question>
             );
           }
