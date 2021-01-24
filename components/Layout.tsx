@@ -45,7 +45,7 @@ const Layout = (props) => {
                 target="_blank"
               >
                 <img
-                  src={`banners/banner4.png`}
+                  src={`banners/banner4.jpg`}
                   alt="노란공테니스 블로그"
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
@@ -56,7 +56,7 @@ const Layout = (props) => {
                 target="_blank"
               >
                 <img
-                  src={`banners/banner1.png`}
+                  src={`banners/banner1.jpg`}
                   alt="VTG 실내테니스 아카데미"
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
@@ -67,7 +67,7 @@ const Layout = (props) => {
                 target="_blank"
               >
                 <img
-                  src={`banners/banner2.png`}
+                  src={`banners/banner2.jpg`}
                   alt="더테니스"
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
@@ -79,7 +79,7 @@ const Layout = (props) => {
               >
                 <img
                   alt="뉴스 더테니스"
-                  src={`banners/banner3.png`}
+                  src={`banners/banner3.jpg`}
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
               </a>
