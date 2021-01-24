@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Question = ({ question, onClickYes, onClickNo, show, score }) => {
   const [loaded, setLoaded] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,9 +23,17 @@ const Question = ({ question, onClickYes, onClickNo, show, score }) => {
             loaded ? "opacity-100" : "opacity-0 "
           } duration-700 transition-all w-96 flex relative flex-col h-60 md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1 `}
         >
-          <div className="absolute top-0 left-0 ml-1 mt-1 text-sm">
-            YTRP {score} 질문 :
+          <div
+            className="cursor-pointer mb-3 md:hidden transition-all transform active:scale-110 absolute -top-16 right-0"
+            onClick={() => {
+              router.push("/");
+            }}
+          >
+            <img src={"img/home.png"} className="w-52"></img>
           </div>
+          {/* <div className="absolute top-0 left-0 ml-1 mt-1 text-sm">
+            YTRP {score} 질문 :
+          </div> */}
           {question.split("\n").map((value, i) => {
             return (
               <span key={i} className="text-xl">

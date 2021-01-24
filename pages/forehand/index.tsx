@@ -55,15 +55,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col justify-center items-center py-2 mx-auto h-full w-full overflow-y-auto relative">
-        <div
-          className="cursor-pointer mb-3 md:hidden transition-all transform active:scale-110"
-          onClick={() => {
-            router.push("/");
-          }}
-        >
-          <img src={"img/home.png"} className="w-52"></img>
-        </div>
+      <div className="flex flex-col justify-center items-center py-2 mx-auto h-full w-full overflow-y-auto relative -mt-8">
         {questions.map((value, i) => {
           if (questionIndex === i) {
             return (
