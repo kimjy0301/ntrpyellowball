@@ -32,7 +32,7 @@ const index = () => {
               <div className="bg-gradient-to-tr from-yellow-1 to-yellow-2 p-2 rounded-md text-2xl">
                 YTRP
               </div>
-              <div className="text-3xl mx-3 shadow-inner">{score}</div>
+              <div className="text-3xl mx-3">{score}</div>
               <div>입니다.</div>
             </div>
           </div>
