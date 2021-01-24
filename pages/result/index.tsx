@@ -28,7 +28,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>노란공테니스 YTRP - 포핸드 결과</title>
+        <title>노란공테니스 YTRP - 스트로크 결과</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-full h-full flex justify-center items-center flex-col -mt-8">
@@ -47,7 +47,7 @@ const index = () => {
           </div>
 
           <div>
-            <div>당신의 포핸드 테니스 능력은</div>
+            <div>당신의 스트로크 능력은</div>
 
             <div className="flex items-center justify-center mt-3">
               <div className="bg-gradient-to-tr from-yellow-1 to-yellow-2 p-2 rounded-md text-2xl">
