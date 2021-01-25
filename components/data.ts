@@ -91,7 +91,7 @@ export const questions = [
     confirm: true,
   },
   {
-    question: "느리고 쉬운 공은 \n  에러없이 넘기는 것이 가능하다.",
+    question: "느리고 쉬운 공이라도 \n  에러없이 다 넘기긴 어렵다.",
     score: "3.0",
     answer: false,
     confirm: false,
@@ -104,14 +104,14 @@ export const questions = [
     confirm: false,
   },
   {
-    question: "빠르고 어려운 공이 아니라면 \n  랠리도 오래하는 편이다.",
+    question: "느리고 쉬운공은 넘기긴 하는데 \n 랠리는 오래 못한다.",
     score: "3.0",
     answer: false,
     confirm: false,
   },
   {
     question:
-      "파워는 부족하고 에러도 많지만 \n 폼이 이쁘다는 소리를 듣는 편이다.",
+      "폼이 이쁘다는 소리는 듣지만 \n 아직 파워도 부족하고 \n 에러가 많다.",
     score: "3.0",
     answer: false,
     confirm: false,
@@ -124,7 +124,7 @@ export const questions = [
   },
   {
     question:
-      "완전하지는 않지만 회전을 이해하고 \n 공을 긁거나 문지를 줄 안다.",
+      "회전을 이해하고 공을 문지르거나 \n 긁는 것이 어렵다.",
     score: "3.0",
     answer: false,
     confirm: false,
@@ -143,7 +143,7 @@ export const questions = [
     confirm: false,
   },
   {
-    question: "쉬운공은 에러없이 가능하며 \n 어려운 공도 넘기기 시작한다.",
+    question: "쉬운공은 에러없이 가능하지만 \n 어려운 공은 에러가 많다.",
     score: "4.0",
     answer: false,
     confirm: false,
