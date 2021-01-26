@@ -35,7 +35,7 @@ const Question = ({ question, onClickYes, onClickNo, show, score }) => {
           <div
             className={`${
               loaded ? "opacity-100" : "opacity-0"
-            } duration-700 transition-all flex justify-center items-center flex-col h-48`}
+            } duration-700 transition-all flex justify-center items-center flex-col h-48 font-q`}
           >
             {question.split("\n").map((value, i) => {
               return (
