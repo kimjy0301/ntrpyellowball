@@ -85,9 +85,9 @@ const index = () => {
               category === "게임운영" &&
               grade === "상급자" && (
                 <>
-                  <div className="text-xs mt-5">
+                  <div className="text-sm mt-5">
                     <div>공만 잘치시면 상급자지만</div>
-                    <div>겸손과 매너도 좋다면 고수라 하지요</div>
+                    <div>게임매너도 좋다면 고수라 하지요</div>
                     <div>고수인지 확인해 볼까요?</div>
                   </div>
                   <div
