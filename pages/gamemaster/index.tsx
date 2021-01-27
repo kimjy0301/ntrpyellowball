@@ -1,9 +1,8 @@
 import Question from "../../components/Question";
-import { questions } from "../../components/gameData";
+import { questions } from "../../components/gameMasterData";
 import { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import QuestionStart from "../../components/QuestionStart";
 
 export type Question = {
   question: string;
@@ -25,14 +24,14 @@ const index = () => {
         nowQuestions[questionIndex].answer === true
       ) {
         router.push(
-          `/result/?menu=game&score=${nowQuestions[questionIndex].score}`
+          `/result/?mastertest=true&menu=game&score=${nowQuestions[questionIndex].score}`
         );
       } else {
         setQuestionIndex(questionIndex + 1);
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?menu=game&score=5.0`);
+      router.push(`/result/?mastertest=true&menu=game&score=6.0`);
     }
   };
   const onClickNo = () => {
@@ -42,14 +41,14 @@ const index = () => {
         nowQuestions[questionIndex].answer === false
       ) {
         router.push(
-          `/result/?menu=game&score=${nowQuestions[questionIndex].score}`
+          `/result/?mastertest=true&menu=game&score=${nowQuestions[questionIndex].score}`
         );
       } else {
         setQuestionIndex(questionIndex + 1);
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?menu=game&score=5.0`);
+      router.push(`/result/?mastertest=true&menu=game&score=6.0`);
     }
   };
 
@@ -63,29 +62,16 @@ const index = () => {
       <div className="flex flex-col justify-center items-center py-2 mx-auto h-full w-full overflow-y-auto relative -mt-8">
         {questions.map((value, i) => {
           if (questionIndex === i) {
-            if (i === 0) {
-              return (
-                <QuestionStart
-                  key={i}
-                  question={value.question}
-                  onClickYes={onClickYes}
-                  onClickNo={onClickNo}
-                  show={true}
-                  score={value.score}
-                ></QuestionStart>
-              );
-            } else {
-              return (
-                <Question
-                  key={i}
-                  question={value.question}
-                  onClickYes={onClickYes}
-                  onClickNo={onClickNo}
-                  show={true}
-                  score={value.score}
-                ></Question>
-              );
-            }
+            return (
+              <Question
+                key={i}
+                question={value.question}
+                onClickYes={onClickYes}
+                onClickNo={onClickNo}
+                show={true}
+                score={value.score}
+              ></Question>
+            );
           }
         })}
       </div>

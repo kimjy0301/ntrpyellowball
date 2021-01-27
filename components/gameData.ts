@@ -1,6 +1,6 @@
 export const questions = [
   {
-    question: "이제 막 테니스를 시작했다면 \n 게임 초보입니다 맞습니까?",
+    question: "게임초보자 입장에서 \n 순차적으로 질문 들어갑니다.",
     score: "1.0",
     answer: true,
     confirm: false,
@@ -72,20 +72,19 @@ export const questions = [
     confirm: false,
   },
   {
-    question: "약하지만 폴트도 많이 줄고 \n 더블폴트는 잘 안하는 편이다.",
+    question: "약하지만 더블폴트는 잘 안하는 편이다.",
     score: "1.0",
     answer: false,
     confirm: true,
   },
   {
-    question:
-      "약하고 컨트롤은 잘 안되지만 \n 쉬운공은 에러없이 잘 넘기는 편이다.",
+    question: "쉬운공은 에러없이 잘 넘기는 편이다.",
     score: "1.0",
     answer: false,
     confirm: true,
   },
   {
-    question: "아직은 공 넘기는 것에만 바쁜 편이다.",
+    question: "아직은 공 넘기기 바쁘다.",
     score: "1.0",
     answer: true,
     confirm: true,

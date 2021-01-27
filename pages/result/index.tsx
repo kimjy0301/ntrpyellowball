@@ -7,6 +7,7 @@ const index = () => {
   const router = useRouter();
   const { score } = router.query;
   const { menu } = router.query;
+  const { mastertest } = router.query;
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,6 +16,13 @@ const index = () => {
   }, []);
 
   let category = "";
+
+  let showMaster = false;
+  if (mastertest === "true") {
+    showMaster = false;
+  } else {
+    showMaster = true;
+  }
 
   if (menu === "game") {
     category = "게임운영";
@@ -31,6 +39,8 @@ const index = () => {
     grade = "중상급자";
   } else if (score === "5.0") {
     grade = "상급자";
+  } else if (score === "6.0") {
+    grade = "진정한 고수";
   }
 
   return (
@@ -58,7 +68,6 @@ const index = () => {
             } duration-700 transition-all  flex flex-col justify-center items-center`}
           >
             <div>당신의 {category} 능력은</div>
-
             <div className="flex items-center justify-center mt-3">
               <div className="bg-gradient-to-tr from-yellow-1 to-yellow-2 p-2 rounded-md text-2xl">
                 YTRP
@@ -71,6 +80,26 @@ const index = () => {
                 <span className="text-xs ml-3">{grade} 등급 입니다.</span>
               </div>
             </div>
+
+            {showMaster === true &&
+              category === "게임운영" &&
+              grade === "상급자" && (
+                <>
+                  <div className="text-xs mt-5">
+                    <div>공만 잘치시면 상급자지만</div>
+                    <div>겸손과 매너도 좋다면 고수라 하지요</div>
+                    <div>고수인지 확인해 볼까요?</div>
+                  </div>
+                  <div
+                    onClick={() => {
+                      router.push("/gamemaster");
+                    }}
+                    className="bg-blue-600 mt-2 py-1 px-2 w-16 flex items-center justify-center hover:bg-blue-700 cursor-pointer transition-all shadow-lg rounded"
+                  >
+                    <span className="text-white text-sm">시작</span>
+                  </div>
+                </>
+              )}
           </div>
         </div>
       </div>
