@@ -6,6 +6,7 @@ const index = () => {
   const [loaded, setLoaded] = useState(false);
   const router = useRouter();
   const { score } = router.query;
+  const { menu } = router.query;
 
   useEffect(() => {
     setTimeout(() => {
@@ -13,22 +14,29 @@ const index = () => {
     }, 200);
   }, []);
 
-  let grade = "입문자";
+  let category = "";
+
+  if (menu === "game") {
+    category = "게임운영";
+  } else if (menu === "technic") {
+    category = "테크닉";
+  }
+
+  let grade = "초보자";
   if (score === "2.0") {
-    grade = "초보자";
-  } else if (score === "3.0") {
     grade = "초중급자";
-  } else if (score === "4.0") {
+  } else if (score === "3.0") {
     grade = "중급자";
-  } else if (score === "5.0") {
+  } else if (score === "4.0") {
     grade = "중상급자";
-  } else if (score === "6.0") {
+  } else if (score === "5.0") {
     grade = "상급자";
   }
+
   return (
     <>
       <Head>
-        <title>노란공테니스 YTRP - 스트로크 결과</title>
+        <title>노란공테니스 YTRP - {category} 결과</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-full h-full flex justify-center items-center flex-col -mt-8">
@@ -49,7 +57,7 @@ const index = () => {
               loaded ? "opacity-100" : "opacity-0"
             } duration-700 transition-all  flex flex-col justify-center items-center`}
           >
-            <div>당신의 스트로크 능력은</div>
+            <div>당신의 {category} 능력은</div>
 
             <div className="flex items-center justify-center mt-3">
               <div className="bg-gradient-to-tr from-yellow-1 to-yellow-2 p-2 rounded-md text-2xl">

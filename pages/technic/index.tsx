@@ -1,5 +1,5 @@
 import Question from "../../components/Question";
-import { questions } from "../../components/data";
+import { questions } from "../../components/technicData";
 import { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -23,13 +23,15 @@ const index = () => {
         nowQuestions[questionIndex].confirm === true &&
         nowQuestions[questionIndex].answer === true
       ) {
-        router.push(`/result/?score=${nowQuestions[questionIndex].score}`);
+        router.push(
+          `/result/?menu=technic&score=${nowQuestions[questionIndex].score}`
+        );
       } else {
         setQuestionIndex(questionIndex + 1);
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?score=6.0`);
+      router.push(`/result/?menu=technic&score=6.0`);
     }
   };
   const onClickNo = () => {
@@ -38,20 +40,22 @@ const index = () => {
         nowQuestions[questionIndex].confirm === true &&
         nowQuestions[questionIndex].answer === false
       ) {
-        router.push(`/result/?score=${nowQuestions[questionIndex].score}`);
+        router.push(
+          `/result/?menu=technic&score=${nowQuestions[questionIndex].score}`
+        );
       } else {
         setQuestionIndex(questionIndex + 1);
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?score=6.0`);
+      router.push(`/result/?menu=technic&score=6.0`);
     }
   };
 
   return (
     <>
       <Head>
-        <title>노란공테니스 YTRP - 포핸드</title>
+        <title>노란공테니스 YTRP - 테크닉</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
