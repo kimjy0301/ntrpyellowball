@@ -31,7 +31,7 @@ const index = () => {
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?menu=game&score=6.0`);
+      router.push(`/result/?menu=game&score=5.0`);
     }
   };
   const onClickNo = () => {
@@ -48,7 +48,7 @@ const index = () => {
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?menu=game&score=6.0`);
+      router.push(`/result/?menu=game&score=5.0`);
     }
   };
 

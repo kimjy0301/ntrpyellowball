@@ -1,4 +1,5 @@
 import Question from "../../components/Question";
+import QuestionStart from "../../components/QuestionStart";
 import { questions } from "../../components/technicData";
 import { useState } from "react";
 import Head from "next/head";
@@ -31,7 +32,7 @@ const index = () => {
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?menu=technic&score=6.0`);
+      router.push(`/result/?menu=technic&score=5.0`);
     }
   };
   const onClickNo = () => {
@@ -48,7 +49,7 @@ const index = () => {
       }
     }
     if (questionIndex + 1 === questions.length) {
-      router.push(`/result/?menu=technic&score=6.0`);
+      router.push(`/result/?menu=technic&score=5.0`);
     }
   };
 
@@ -62,16 +63,29 @@ const index = () => {
       <div className="flex flex-col justify-center items-center py-2 mx-auto h-full w-full overflow-y-auto relative -mt-8">
         {questions.map((value, i) => {
           if (questionIndex === i) {
-            return (
-              <Question
-                key={i}
-                question={value.question}
-                onClickYes={onClickYes}
-                onClickNo={onClickNo}
-                show={true}
-                score={value.score}
-              ></Question>
-            );
+            if (i === 0) {
+              return (
+                <QuestionStart
+                  key={i}
+                  question={value.question}
+                  onClickYes={onClickYes}
+                  onClickNo={onClickNo}
+                  show={true}
+                  score={value.score}
+                ></QuestionStart>
+              );
+            } else {
+              return (
+                <Question
+                  key={i}
+                  question={value.question}
+                  onClickYes={onClickYes}
+                  onClickNo={onClickNo}
+                  show={true}
+                  score={value.score}
+                ></Question>
+              );
+            }
           }
         })}
       </div>

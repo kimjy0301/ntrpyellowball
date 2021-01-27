@@ -1,6 +1,6 @@
 export const questions = [
   {
-    question: "이제 막 테니스를 시작했다면 \n 입문자입니다 맞습니까?",
+    question: "입문자, 초보자의 입장에서 \n 순차적으로 시작 하겠습니다.",
     score: "1.0",
     answer: true,
     confirm: false,
@@ -159,7 +159,7 @@ export const questions = [
   },
   {
     question: "[그립] 아직 그립전환이 \n 늦거나 못바꾸는 경우가 많다.",
-    score: "1.0",
+    score: "2.0",
     answer: true,
     confirm: true,
   },
@@ -273,7 +273,7 @@ export const questions = [
   },
   {
     question: "[스트로크] 기회가 오면 \n 공격적으로 포인트를 낼 확률이 높다.",
-    score: "2.0",
+    score: "3.0",
     answer: false,
     confirm: true,
   },
@@ -360,7 +360,7 @@ export const questions = [
   },
   {
     question: "[서브] 서브를 넣기 전  \n 어느코스로 넣을지 고민하는 편이다.",
-    score: "3.0",
+    score: "4.0",
     answer: false,
     confirm: true,
   },
