@@ -28,7 +28,7 @@ const KakaoMap = () => {
   });
 
   function moveCenter() {
-    if (map) {
+    if (map && searchText === "") {
       var moveLatLon = new kakao.maps.LatLng(
         37.7070107983045,
         126.816936939352
@@ -39,7 +39,7 @@ const KakaoMap = () => {
       map.panTo(moveLatLon);
     }
   }
-  // moveCenter();
+  moveCenter();
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -55,6 +55,7 @@ const KakaoMap = () => {
         let container = document.getElementById("kakaomap");
         var options = {
           center: new kakao.maps.LatLng(37.7070107983045, 126.816936939352),
+
           level: 5,
         };
 
@@ -106,7 +107,6 @@ const KakaoMap = () => {
             }
           });
         });
-
         setMap(tmpMap);
       });
     };
@@ -126,8 +126,6 @@ const KakaoMap = () => {
         );
         map.setLevel(5);
         map.panTo(coords);
-
-        console.log(coords);
       }
     });
   }
