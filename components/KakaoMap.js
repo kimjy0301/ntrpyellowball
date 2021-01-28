@@ -27,6 +27,19 @@ const KakaoMap = () => {
     }
   });
 
+  function moveCenter() {
+    if (map) {
+      var moveLatLon = new kakao.maps.LatLng(
+        37.70136758790199,
+        126.81675969770745
+      );
+      // 지도 중심을 부드럽게 이동시킵니다
+      // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+      map.panTo(moveLatLon);
+    }
+  }
+  moveCenter();
+
   useEffect(() => {
     const script = document.createElement("script");
 
@@ -41,7 +54,7 @@ const KakaoMap = () => {
         let container = document.getElementById("kakaomap");
         var options = {
           center: new kakao.maps.LatLng(37.70136758790199, 126.81675969770745),
-          level: 6,
+          level: 5,
         };
 
         const map = new kakao.maps.Map(container, options);
@@ -58,7 +71,7 @@ const KakaoMap = () => {
               lng = result[0].x;
 
               var imageSrc = "marker.png", // 마커이미지의 주소입니다
-                imageSize = new kakao.maps.Size(44, 50), // 마커이미지의 크기입니다
+                imageSize = new kakao.maps.Size(35, 40), // 마커이미지의 크기입니다
                 imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
               // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
@@ -78,7 +91,7 @@ const KakaoMap = () => {
               // 마커가 지도 위에 표시되도록 설정합니다
               marker.setMap(map);
 
-              var iwContent = `<div class="p-4 rounded h-48 w-52 md:text-sm">코트명 : ${value.name} <br>주소 : ${value.location} <br>전화번호 : ${value.call} <br>코트종류 : ${value.surface} <br>코트면수 : ${value.count} <br>예약가능여부 : ${value.reservation} <br> <a href="https://map.kakao.com/link/to/${value.name},${lat},${lng}" target="_blank" class="text-white bg-blue-600 rounded px-2 ">길찾기</a></div>`,
+              var iwContent = `<div class="p-4 rounded h-full w-52 md:text-sm">코트명 : ${value.name} <br>주소 : ${value.location} <br>전화번호 : ${value.call} <br>코트종류 : ${value.surface} <br>코트면수 : ${value.count} <br>예약가능여부 : ${value.reservation} <br> <a href="https://map.kakao.com/link/to/${value.name},${lat},${lng}" target="_blank" class="text-white bg-blue-600 rounded px-2 ">길찾기</a></div>`,
                 iwPosition = new kakao.maps.LatLng(lat, lng); //인포윈도우 표시 위치입니다
 
               // 인포윈도우를 생성합니다
@@ -108,8 +121,6 @@ const KakaoMap = () => {
       if (status === kakao.maps.services.Status.OK) {
         var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
         map.panTo(coords);
-
-        console.log(coords);
       }
     });
   }
