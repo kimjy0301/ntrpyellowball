@@ -16,9 +16,9 @@ const index = () => {
         <title>노란공테니스 YTRP - 테니스 코트 정보</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full h-full flex justify-center items-center flex-col py-3">
+      <div className="w-full h-full flex justify-center items-center flex-col p-3">
         <div
-          className={`w-96 flex relative flex-col h-full md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1`}
+          className={`w-full flex relative flex-col h-full md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1`}
         >
           <div className="w-full h-full">
             <KakaoMap></KakaoMap>
