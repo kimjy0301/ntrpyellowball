@@ -116,7 +116,6 @@ const KakaoMap = () => {
             onSubmit={(e) => {
               e.preventDefault();
               inputRef.current?.blur();
-              inputRef.current?.focus();
             }}
           >
             <div>
