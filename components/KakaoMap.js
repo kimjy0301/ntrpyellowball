@@ -8,7 +8,7 @@ const KakaoMap = () => {
   const [map, setMap] = useState();
   const [geocoder, setGeocoder] = useState();
 
-  const [inputRef] = useRef();
+  const inputRef = useRef(null);
 
   let filterdCourts = [];
 
@@ -56,9 +56,6 @@ const KakaoMap = () => {
             if (status === kakao.maps.services.Status.OK) {
               lat = result[0].y;
               lng = result[0].x;
-
-              console.log(lat);
-              console.log(lng);
 
               var imageSrc = "marker.png", // 마커이미지의 주소입니다
                 imageSize = new kakao.maps.Size(44, 50), // 마커이미지의 크기입니다
@@ -115,7 +112,13 @@ const KakaoMap = () => {
           id="kakaomap"
         ></div>
         <div className="bg-trans absolute top-0 z-50 p-3 w-full text-lg">
-          <form onSubmit={(e) => {}}>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              inputRef.current?.blur();
+              inputRef.current?.focus();
+            }}
+          >
             <div>
               키워드 :
               <input
