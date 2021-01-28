@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,9 +17,11 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/_appjs"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "pages/_appjs",
+    "components/KakaoMap.js",
+    "components/KakaoMap.js",
+    "components/KakaoMap.js"
+  ],
+  "exclude": ["node_modules"]
 }

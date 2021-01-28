@@ -1,16 +1,34 @@
 /*global kakao*/
 import React, { useState } from "react";
 import { useEffect } from "react";
+import { courts } from "../components/courtsData";
 
 const KakaoMap = () => {
-  const [keyword, setKeyword] = useState("");
+  const [searchText, setSearchText] = useState("");
   const [map, setMap] = useState();
+  const [geocoder, setGeocoder] = useState();
+
+  let filterdCourts = [];
+
+  const onChangeText = ({ target: { value } }) => {
+    setSearchText(value);
+  };
+
+  filterdCourts = courts.filter((value) => {
+    if (
+      value.location.includes(searchText) ||
+      value.call.includes(searchText) ||
+      value.name.includes(searchText)
+    ) {
+      return value;
+    }
+  });
 
   useEffect(() => {
     const script = document.createElement("script");
 
     script.src =
-      "//dapi.kakao.com/v2/maps/sdk.js?appkey=bceef382c68271baae2f8cb3fa08af86&autoload=false";
+      "//dapi.kakao.com/v2/maps/sdk.js?appkey=bceef382c68271baae2f8cb3fa08af86&autoload=false&libraries=services";
     script.type = "text/javascript";
 
     document.body.appendChild(script);
@@ -24,6 +42,7 @@ const KakaoMap = () => {
         };
 
         const map = new kakao.maps.Map(container, options);
+        setGeocoder(new kakao.maps.services.Geocoder());
 
         var imageSrc = "marker.png", // 마커이미지의 주소입니다
           imageSize = new kakao.maps.Size(44, 50), // 마커이미지의 크기입니다
@@ -58,21 +77,14 @@ const KakaoMap = () => {
     };
   }, []);
 
-  function setCenter() {
-    // 이동할 위도 경도 위치를 생성합니다
-    var moveLatLon = new kakao.maps.LatLng(33.452613, 126.570888);
-
-    // 지도 중심을 이동 시킵니다
-    map.setCenter(moveLatLon);
-  }
-
-  function panTo() {
-    // 이동할 위도 경도 위치를 생성합니다
-    var moveLatLon = new kakao.maps.LatLng(33.45058, 126.574942);
-
-    // 지도 중심을 부드럽게 이동시킵니다
-    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
-    map.panTo(moveLatLon);
+  function getLocationByAddress(address) {
+    geocoder.addressSearch(address, function (result, status) {
+      // 정상적으로 검색이 완료됐으면
+      if (status === kakao.maps.services.Status.OK) {
+        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+        map.panTo(coords);
+      }
+    });
   }
 
   return (
@@ -88,12 +100,28 @@ const KakaoMap = () => {
             <input
               className="ml-2"
               type="text"
-              value={keyword}
-              onChange={(e) => {
-                setKeyword(e.value);
-              }}
-              id="keyword"
+              value={searchText}
+              onChange={onChangeText}
             ></input>
+          </div>
+
+          <div className="flex flex-col mt-2 h-28 overflow-y-auto ">
+            {filterdCourts?.map((value, i) => {
+              return (
+                <div
+                  key={i}
+                  className="text-xs cursor-pointerl"
+                  onClick={() => {
+                    getLocationByAddress(value.location);
+                  }}
+                >
+                  <div> {value.name}</div>
+                  <div> {value.location}</div>
+                  <div> {value.call}</div>
+                  <div> {value.homepage}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
