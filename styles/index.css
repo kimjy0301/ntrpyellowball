@@ -132,7 +132,7 @@ body {
 }
 
 .bg-trans {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 @keyframes hover-scale {
