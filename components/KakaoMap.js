@@ -1,15 +1,18 @@
 /*global kakao*/
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 
 const KakaoMap = () => {
+  const [keyword, setKeyword] = useState("");
+
+  const [map, setMap] = useState();
+
   useEffect(() => {
     const script = document.createElement("script");
 
     script.src =
       "//dapi.kakao.com/v2/maps/sdk.js?appkey=bceef382c68271baae2f8cb3fa08af86&autoload=false";
     script.type = "text/javascript";
-    script.autol;
 
     document.body.appendChild(script);
 
@@ -21,7 +24,7 @@ const KakaoMap = () => {
           level: 6,
         };
 
-        const map = new window.kakao.maps.Map(container, options);
+        setMap(new window.kakao.maps.Map(container, options));
 
         var imageSrc = "marker.png", // 마커이미지의 주소입니다
           imageSize = new kakao.maps.Size(44, 50), // 마커이미지의 크기입니다
@@ -46,30 +49,6 @@ const KakaoMap = () => {
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-
-        function setMapType(maptype) {
-          var roadmapControl = document.getElementById("btnRoadmap");
-          var skyviewControl = document.getElementById("btnSkyview");
-          if (maptype === "roadmap") {
-            map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
-            roadmapControl.className = "selected_btn";
-            skyviewControl.className = "btn";
-          } else {
-            map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
-            skyviewControl.className = "selected_btn";
-            roadmapControl.className = "btn";
-          }
-        }
-
-        // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
-        function zoomIn() {
-          map.setLevel(map.getLevel() - 1);
-        }
-
-        // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
-        function zoomOut() {
-          map.setLevel(map.getLevel() + 1);
-        }
       });
     };
 
@@ -78,6 +57,23 @@ const KakaoMap = () => {
     };
   }, []);
 
+  function setCenter() {
+    // 이동할 위도 경도 위치를 생성합니다
+    var moveLatLon = new kakao.maps.LatLng(33.452613, 126.570888);
+
+    // 지도 중심을 이동 시킵니다
+    map.setCenter(moveLatLon);
+  }
+
+  function panTo() {
+    // 이동할 위도 경도 위치를 생성합니다
+    var moveLatLon = new kakao.maps.LatLng(33.45058, 126.574942);
+
+    // 지도 중심을 부드럽게 이동시킵니다
+    // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+    map.panTo(moveLatLon);
+  }
+
   return (
     <>
       <div className="relative h-full w-full">
@@ -85,13 +81,21 @@ const KakaoMap = () => {
           className="h-full w-full bg-white z-0 relative"
           id="kakaomap"
         ></div>
-        <div className="bg-trans absolute top-0 z-50 h-40 p-3">
+        <div className="bg-trans absolute top-0 z-50 h-40 p-3 w-full">
           <div>
-            <form onSubmit="searchPlaces(); return false;">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                panTo();
+              }}
+            >
               키워드 :
               <input
                 type="text"
-                value="이태원 맛집"
+                value={keyword}
+                onChange={(e) => {
+                  setKeyword(e.value);
+                }}
                 id="keyword"
                 size="15"
               ></input>
