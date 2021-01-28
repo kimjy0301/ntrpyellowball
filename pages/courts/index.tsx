@@ -20,11 +20,7 @@ const index = () => {
         <div
           className={`w-96 flex relative flex-col h-full md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1`}
         >
-          <div
-            className={`${
-              loaded ? "opacity-100" : "opacity-0"
-            } duration-700 transition-all w-full h-full`}
-          >
+          <div className="w-full h-full">
             <KakaoMap></KakaoMap>
           </div>
         </div>
