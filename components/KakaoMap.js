@@ -1,5 +1,5 @@
 /*global kakao*/
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { courts } from "../components/courtsData";
 
@@ -7,6 +7,8 @@ const KakaoMap = () => {
   const [searchText, setSearchText] = useState("");
   const [map, setMap] = useState();
   const [geocoder, setGeocoder] = useState();
+
+  const [inputRef] = useRef();
 
   let filterdCourts = [];
 
@@ -113,24 +115,16 @@ const KakaoMap = () => {
           id="kakaomap"
         ></div>
         <div className="bg-trans absolute top-0 z-50 p-3 w-full text-lg">
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
-          >
+          <form onSubmit={(e) => {}}>
             <div>
               키워드 :
               <input
+                ref={inputRef}
                 className="ml-2 px-2 w-48"
                 type="text"
                 value={searchText}
                 placeholder="테니스장명, 주소"
                 onChange={onChangeText}
-                onKeyDown={(e) => {
-                  if (e.code === "Enter") {
-                    alert("!!!!");
-                  }
-                }}
               ></input>
             </div>
           </form>
