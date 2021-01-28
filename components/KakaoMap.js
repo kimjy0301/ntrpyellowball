@@ -126,6 +126,11 @@ const KakaoMap = () => {
                 value={searchText}
                 placeholder="테니스장명, 주소"
                 onChange={onChangeText}
+                onKeyDown={(e) => {
+                  if (e.code === "Enter") {
+                    alert("!!!!");
+                  }
+                }}
               ></input>
             </div>
           </form>
