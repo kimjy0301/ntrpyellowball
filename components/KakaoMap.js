@@ -80,7 +80,23 @@ const KakaoMap = () => {
 
   return (
     <>
-      <div className="h-full w-full bg-black" id="kakaomap"></div>
+      <div className="relative h-full w-full">
+        <div className="h-full w-full bg-white" id="kakaomap"></div>
+        <div className="bg-trans absolute top-0">
+          <div>
+            <form onSubmit="searchPlaces(); return false;">
+              키워드 :
+              <input
+                type="text"
+                value="이태원 맛집"
+                id="keyword"
+                size="15"
+              ></input>
+              <button type="submit">검색하기</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

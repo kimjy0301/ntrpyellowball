@@ -131,6 +131,10 @@ body {
   @apply rotate-12;
 }
 
+.bg-trans {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 @keyframes hover-scale {
   0% {
     --tw-scale-x: 1;
