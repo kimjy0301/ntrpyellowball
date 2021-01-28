@@ -113,16 +113,22 @@ const KakaoMap = () => {
           id="kakaomap"
         ></div>
         <div className="bg-trans absolute top-0 z-50 p-3 w-full text-lg">
-          <div>
-            키워드 :
-            <input
-              className="ml-2 px-2 w-48"
-              type="text"
-              value={searchText}
-              placeholder="테니스장명, 주소"
-              onChange={onChangeText}
-            ></input>
-          </div>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
+            <div>
+              키워드 :
+              <input
+                className="ml-2 px-2 w-48"
+                type="text"
+                value={searchText}
+                placeholder="테니스장명, 주소"
+                onChange={onChangeText}
+              ></input>
+            </div>
+          </form>
 
           <div className="flex flex-col mt-2 max-h-28 overflow-y-auto ">
             {filterdCourts?.map((value, i) => {
