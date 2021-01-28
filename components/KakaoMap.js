@@ -166,7 +166,9 @@ const KakaoMap = () => {
                   key={i}
                   className="text-xs cursor-pointerl flex justify-start items-center mt-2 pb-2 border-b"
                   onClick={() => {
-                    getLocationByAddress(value.location);
+                    if (searchText !== "") {
+                      getLocationByAddress(value.location);
+                    }
                   }}
                 >
                   <div className="text-xl mr-2">{i + 1}.</div>
