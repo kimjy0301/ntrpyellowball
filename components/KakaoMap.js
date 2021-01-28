@@ -145,7 +145,7 @@ const KakaoMap = () => {
             }}
           >
             <div>
-              키워드 :
+              검색 :
               <input
                 ref={inputRef}
                 className="ml-2 px-2 w-48"
