@@ -78,7 +78,7 @@ const KakaoMap = () => {
               // 마커가 지도 위에 표시되도록 설정합니다
               marker.setMap(map);
 
-              var iwContent = `<div class="p-4 rounded h-48 w-52 md:text-sm">코트명 : ${value.name} <br>주소 : ${value.location} <br>전화번호 : ${value.call} <br>코트종류 : ${value.surface} <br>코트면수 : ${value.count} <br>예약가능여부 : ${value.reservation} <br> <a href="https://map.kakao.com/link/to/${value.name},${lat},${lng}" target="_blank">길찾기</a></div>`,
+              var iwContent = `<div class="p-4 rounded h-48 w-52 md:text-sm">코트명 : ${value.name} <br>주소 : ${value.location} <br>전화번호 : ${value.call} <br>코트종류 : ${value.surface} <br>코트면수 : ${value.count} <br>예약가능여부 : ${value.reservation} <br> <a href="https://map.kakao.com/link/to/${value.name},${lat},${lng}" target="_blank" class="text-white bg-blue-600 rounded px-2 ">길찾기</a></div>`,
                 iwPosition = new kakao.maps.LatLng(lat, lng); //인포윈도우 표시 위치입니다
 
               // 인포윈도우를 생성합니다
@@ -106,10 +106,7 @@ const KakaoMap = () => {
     geocoder.addressSearch(address, function (result, status) {
       // 정상적으로 검색이 완료됐으면
       if (status === kakao.maps.services.Status.OK) {
-        var coords = new kakao.maps.LatLng(
-          Number(result[0].y) + 0.01,
-          result[0].x
-        );
+        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
         map.panTo(coords);
 
         console.log(coords);
