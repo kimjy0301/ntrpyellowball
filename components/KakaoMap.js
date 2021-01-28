@@ -19,9 +19,9 @@ const KakaoMap = () => {
   filterdCourts = courts.filter((value) => {
     if (
       searchText !== "" &&
-      (value.location.includes(searchText) ||
-        value.call.includes(searchText) ||
-        value.name.includes(searchText))
+      (value.location.toUpperCase().includes(searchText.toUpperCase()) ||
+        value.call.toUpperCase().includes(searchText.toUpperCase()) ||
+        value.name.toUpperCase().includes(searchText.toUpperCase()))
     ) {
       return value;
     }
@@ -30,11 +30,12 @@ const KakaoMap = () => {
   function moveCenter() {
     if (map) {
       var moveLatLon = new kakao.maps.LatLng(
-        37.70145630785961,
-        126.81732361855656
+        37.7070107983045,
+        126.816936939352
       );
       // 지도 중심을 부드럽게 이동시킵니다
       // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+      map.setLevel(5);
       map.panTo(moveLatLon);
     }
   }
@@ -53,11 +54,11 @@ const KakaoMap = () => {
       kakao.maps.load(() => {
         let container = document.getElementById("kakaomap");
         var options = {
-          center: new kakao.maps.LatLng(37.70145630785961, 126.81732361855656),
+          center: new kakao.maps.LatLng(37.7070107983045, 126.816936939352),
           level: 5,
         };
 
-        const map = new kakao.maps.Map(container, options);
+        const tmpMap = new kakao.maps.Map(container, options);
         let tmpGeocoder = new kakao.maps.services.Geocoder();
         setGeocoder(tmpGeocoder);
 
@@ -89,7 +90,7 @@ const KakaoMap = () => {
               });
 
               // 마커가 지도 위에 표시되도록 설정합니다
-              marker.setMap(map);
+              marker.setMap(tmpMap);
 
               var iwContent = `<div class="p-4 rounded h-full w-52 md:text-sm">코트명 : ${value.name} <br>주소 : ${value.location} <br>전화번호 : ${value.call} <br>코트종류 : ${value.surface} <br>코트면수 : ${value.count} <br>예약가능여부 : ${value.reservation} <br> <a href="https://map.kakao.com/link/to/${value.name},${lat},${lng}" target="_blank" class="text-white bg-blue-600 rounded px-2 ">길찾기</a></div>`,
                 iwPosition = new kakao.maps.LatLng(lat, lng); //인포윈도우 표시 위치입니다
@@ -101,12 +102,12 @@ const KakaoMap = () => {
               });
 
               // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
-              infowindow.open(map, marker);
+              infowindow.open(tmpMap, marker);
             }
           });
         });
 
-        setMap(map);
+        setMap(tmpMap);
       });
     };
 
@@ -119,8 +120,14 @@ const KakaoMap = () => {
     geocoder.addressSearch(address, function (result, status) {
       // 정상적으로 검색이 완료됐으면
       if (status === kakao.maps.services.Status.OK) {
-        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+        var coords = new kakao.maps.LatLng(
+          Number(result[0].y) + 0.005,
+          result[0].x
+        );
+        map.setLevel(5);
         map.panTo(coords);
+
+        console.log(coords);
       }
     });
   }
