@@ -153,7 +153,7 @@ const KakaoMap = () => {
               검색 :
               <input
                 ref={inputRef}
-                className="ml-2 px-2 w-48"
+                className="ml-2 px-2 w-48 border border-yellow-1"
                 type="text"
                 value={searchText}
                 placeholder="테니스장명, 주소"
