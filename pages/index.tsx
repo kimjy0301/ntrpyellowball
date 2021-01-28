@@ -81,7 +81,7 @@ const Home = (props: HomeProps) => {
                 router.push("/courts");
               }}
             >
-              <span className="text-sm md:text-2xl">테니스 코트 정보</span>
+              <span className="text-sm md:text-2xl">테니스 코트 찾기</span>
             </div>
 
             <div
