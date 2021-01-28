@@ -116,7 +116,7 @@ const KakaoMap = () => {
           <div>
             키워드 :
             <input
-              className="ml-2 px-2"
+              className="ml-2 px-2 w-48"
               type="text"
               value={searchText}
               placeholder="테니스장명, 주소"
