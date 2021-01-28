@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 const KakaoMap = () => {
   const [keyword, setKeyword] = useState("");
-
   const [map, setMap] = useState();
 
   useEffect(() => {
@@ -24,7 +23,7 @@ const KakaoMap = () => {
           level: 6,
         };
 
-        setMap(new window.kakao.maps.Map(container, options));
+        const map = new kakao.maps.Map(container, options);
 
         var imageSrc = "marker.png", // 마커이미지의 주소입니다
           imageSize = new kakao.maps.Size(44, 50), // 마커이미지의 크기입니다
@@ -49,6 +48,8 @@ const KakaoMap = () => {
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
+
+        setMap(map);
       });
     };
 
@@ -83,24 +84,16 @@ const KakaoMap = () => {
         ></div>
         <div className="bg-trans absolute top-0 z-50 h-40 p-3 w-full">
           <div>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                panTo();
+            키워드 :
+            <input
+              className="ml-2"
+              type="text"
+              value={keyword}
+              onChange={(e) => {
+                setKeyword(e.value);
               }}
-            >
-              키워드 :
-              <input
-                type="text"
-                value={keyword}
-                onChange={(e) => {
-                  setKeyword(e.value);
-                }}
-                id="keyword"
-                size="15"
-              ></input>
-              <button type="submit">검색하기</button>
-            </form>
+              id="keyword"
+            ></input>
           </div>
         </div>
       </div>
