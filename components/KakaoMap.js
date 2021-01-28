@@ -39,7 +39,7 @@ const KakaoMap = () => {
       map.panTo(moveLatLon);
     }
   }
-  moveCenter();
+  // moveCenter();
 
   useEffect(() => {
     const script = document.createElement("script");
