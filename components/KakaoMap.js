@@ -30,8 +30,8 @@ const KakaoMap = () => {
   function moveCenter() {
     if (map) {
       var moveLatLon = new kakao.maps.LatLng(
-        37.70136758790199,
-        126.81675969770745
+        37.70145630785961,
+        126.81732361855656
       );
       // 지도 중심을 부드럽게 이동시킵니다
       // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
@@ -53,7 +53,7 @@ const KakaoMap = () => {
       kakao.maps.load(() => {
         let container = document.getElementById("kakaomap");
         var options = {
-          center: new kakao.maps.LatLng(37.70136758790199, 126.81675969770745),
+          center: new kakao.maps.LatLng(37.70145630785961, 126.81732361855656),
           level: 5,
         };
 
