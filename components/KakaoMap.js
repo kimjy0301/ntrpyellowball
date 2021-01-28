@@ -16,6 +16,12 @@ const KakaoMap = () => {
     setSearchText(value);
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      map?.setCenter(new kakao.maps.LatLng(37.7070107983045, 126.816936939352));
+    }, 300);
+  }, [map]);
+
   filterdCourts = courts.filter((value) => {
     if (
       searchText !== "" &&
@@ -39,7 +45,6 @@ const KakaoMap = () => {
       map.panTo(moveLatLon);
     }
   }
-  moveCenter();
 
   useEffect(() => {
     const script = document.createElement("script");
