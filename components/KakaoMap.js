@@ -81,8 +81,11 @@ const KakaoMap = () => {
   return (
     <>
       <div className="relative h-full w-full">
-        <div className="h-full w-full bg-white" id="kakaomap"></div>
-        <div className="bg-trans absolute top-0">
+        <div
+          className="h-full w-full bg-white z-0 relative"
+          id="kakaomap"
+        ></div>
+        <div className="bg-trans absolute top-0 z-50 h-40 p-3">
           <div>
             <form onSubmit="searchPlaces(); return false;">
               키워드 :
