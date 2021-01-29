@@ -19,9 +19,9 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_appjs",
-    "components/KakaoMap.js",
-    "components/KakaoMap.js",
-    "components/KakaoMap.js"
+    "components/CourtsKakaoMap.js",
+    "components/CourtsKakaoMap.js",
+    "components/CourtsKakaoMap.js"
   ],
   "exclude": ["node_modules"]
 }

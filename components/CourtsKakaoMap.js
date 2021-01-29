@@ -1,7 +1,7 @@
 /*global kakao*/
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
-import { courts } from "../components/courtsData";
+import { courts } from "./courtsData";
 
 const KakaoMap = () => {
   const [searchText, setSearchText] = useState("");
@@ -100,7 +100,7 @@ const KakaoMap = () => {
               marker.setMap(tmpMap);
 
               var iwContent = `               
-              <div class="p-4 rounded-md h-44 w-72 text-xs bg-trans07 absolute flex flex-col justify-center shadow items-start bottom-20 -ml-36">
+              <div class="py-3 px-4 rounded-md w-72 text-xs bg-trans07 absolute flex flex-col justify-center shadow items-start bottom-20 -ml-36">
               <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
                 닫기
               </div>
@@ -134,7 +134,12 @@ const KakaoMap = () => {
                   </a>
                 </div>
               </div>
-      
+              <div class="flex mt-1">
+                <div class="w-14 text-right">기타 : </div>
+                <div class="ml-1">                 
+                      ${value.etc.replace(/\n/g, "<br/>")}
+                </div>
+              </div>
               <div class="flex mt-2 justify-center items-center">
                 <div class="w-14 text-right ">길찾기 : </div>
                 <div class="ml-1 flex">

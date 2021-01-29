@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import KakaoMap from "../../components/KakaoMap";
+import KakaoMap from "../../components/CourtsKakaoMap";
 
 const index = () => {
   const [loaded, setLoaded] = useState(false);
