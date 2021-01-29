@@ -43,8 +43,8 @@ const CourtsKakaoMap = () => {
   function moveCenter() {
     if (map && searchText === "") {
       var moveLatLon = new kakao.maps.LatLng(
-        37.7070107983045,
-        126.816936939352
+        37.566653033875774,
+        126.97876549797886
       );
       // 지도 중심을 부드럽게 이동시킵니다
       // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
@@ -66,9 +66,9 @@ const CourtsKakaoMap = () => {
       kakao.maps.load(() => {
         let container = document.getElementById("kakaomap");
         var options = {
-          center: new kakao.maps.LatLng(37.7070107983045, 126.816936939352),
+          center: new kakao.maps.LatLng(37.566653033875774, 126.97876549797886),
 
-          level: 5,
+          level: 7,
         };
 
         const tmpMap = new kakao.maps.Map(container, options);

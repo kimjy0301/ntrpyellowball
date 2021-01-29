@@ -25,7 +25,9 @@ const ClubKakaoMap = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      map?.setCenter(new kakao.maps.LatLng(37.7070107983045, 126.816936939352));
+      map?.setCenter(
+        new kakao.maps.LatLng(37.566653033875774, 126.97876549797886)
+      );
     }, 300);
   }, [map]);
 
@@ -66,9 +68,9 @@ const ClubKakaoMap = () => {
       kakao.maps.load(() => {
         let container = document.getElementById("kakaomap");
         var options = {
-          center: new kakao.maps.LatLng(37.7070107983045, 126.816936939352),
+          center: new kakao.maps.LatLng(37.566653033875774, 126.97876549797886),
 
-          level: 5,
+          level: 7,
         };
 
         const tmpMap = new kakao.maps.Map(container, options);

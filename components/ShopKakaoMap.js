@@ -43,8 +43,8 @@ const ShopKakaoMap = () => {
   function moveCenter() {
     if (map && searchText === "") {
       var moveLatLon = new kakao.maps.LatLng(
-        37.7070107983045,
-        126.816936939352
+        37.566653033875774,
+        126.97876549797886
       );
       // 지도 중심을 부드럽게 이동시킵니다
       // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
@@ -66,9 +66,9 @@ const ShopKakaoMap = () => {
       kakao.maps.load(() => {
         let container = document.getElementById("kakaomap");
         var options = {
-          center: new kakao.maps.LatLng(37.7070107983045, 126.816936939352),
+          center: new kakao.maps.LatLng(37.566653033875774, 126.97876549797886),
 
-          level: 5,
+          level: 7,
         };
 
         const tmpMap = new kakao.maps.Map(container, options);
@@ -109,34 +109,29 @@ const ShopKakaoMap = () => {
               var iwContent = `               
               <div id="court-${
                 value.index
-              }" class="py-3 px-4 rounded-md w-72 text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-36">
+              }" class="py-3 px-4 rounded-md text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-28">
               <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">상호명 : </div>
                 <div class="ml-1">${value.name}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">대표자 : </div>
                 <div class="ml-1 overflow-auto">
                 ${value.ceo}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">주소 : </div>
                 <div class="ml-1 overflow-auto">
                 ${value.location.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">전화번호 : </div>
                 <div class="ml-1"><a href="tel:${value.call}">${
                   value.call
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">홈페이지 : </div>
                 <div class="ml-1 underline">
                   <a href="${value.homepage}" target="_blank">
                     ${value.homepage
@@ -146,7 +141,6 @@ const ShopKakaoMap = () => {
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">종목 : </div>
                 <div class="ml-1 overflow-auto">
                 ${value.category}
                 </div>
@@ -263,14 +257,12 @@ const ShopKakaoMap = () => {
                     }, 200);
                   }}
                 >
-                  <div className="text-xl">{i + 1}.</div>
+                  <div className="text-xl mr-2">{i + 1}.</div>
                   <div>
                     <div className="flex ">
-                      <div className="w-12 mr-1 text-right">샵이름 : </div>
                       <div>{value.name}</div>
                     </div>
                     <div className="flex ">
-                      <div className="w-12 mr-1 text-right">주소 :</div>
                       <div> {value.location}</div>
                     </div>
                   </div>
