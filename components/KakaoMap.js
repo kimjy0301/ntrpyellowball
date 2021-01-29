@@ -8,6 +8,7 @@ const KakaoMap = () => {
   const [map, setMap] = useState();
   const [geocoder, setGeocoder] = useState();
 
+  const [overlay, setOverlay] = useState();
   const inputRef = useRef(null);
 
   let filterdCourts = [];
@@ -67,7 +68,7 @@ const KakaoMap = () => {
         const tmpMap = new kakao.maps.Map(container, options);
         let tmpGeocoder = new kakao.maps.services.Geocoder();
         setGeocoder(tmpGeocoder);
-
+        let tmpOverlay;
         courts.map((value) => {
           let lat;
           let lng;
@@ -98,21 +99,70 @@ const KakaoMap = () => {
               // 마커가 지도 위에 표시되도록 설정합니다
               marker.setMap(tmpMap);
 
-              var iwContent = `<div class="p-4 rounded h-full w-64 text-xs">코트명 : ${value.name} <br>주소 : ${value.location} <br><a href="tel:${value.call}">전화번호 : ${value.call} </a><br>코트종류 : ${value.surface} <br>코트면수 : ${value.count} <br>예약가능여부 : ${value.reservation} <br><a href="${value.homepage}" target="_blank">홈페이지 : ${value.homepage} </a><br> <div class="mt-2"><a href="https://map.kakao.com/link/to/${value.name},${lat},${lng}" target="_blank" class="text-white bg-blue-600 rounded px-2 py-1 ">길찾기</a></div></div>`,
+              var iwContent = `               
+              <div class="p-4 rounded-md h-44 w-72 text-xs bg-trans07 absolute flex flex-col justify-center shadow items-start bottom-20 -ml-36">
+              <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
+                닫기
+              </div>
+              <div class="flex mt-1">
+                <div class="w-14 text-right">코트명 : </div>
+                <div class="ml-1">${value.name}</div>
+              </div>
+              <div class="flex mt-1">
+                <div class="w-14 text-right">주소 : </div>
+                <div class="ml-1 overflow-auto">
+                ${value.location.replace(/\n/g, "<br/>")}
+                </div>
+              </div>
+              <div class="flex mt-1">
+                <div class="w-14 text-right">전화번호 : </div>
+                <div class="ml-1">${value.call}</div>
+              </div>
+              <div class="flex mt-1">
+                <div class="w-14 text-right">코트 : </div>
+                <div class="ml-1">${value.surface}</div>
+              </div>
+              <div class="flex mt-1">
+                <div class="w-14 text-right">홈페이지 : </div>
+                <div class="ml-1">
+                  <a href="${value.homepage}" target="_blank">
+                    http://yellowball.co.kr
+                  </a>
+                </div>
+              </div>
+      
+              <div class="flex mt-1">
+                <div class="w-14 text-right ">길찾기 : </div>
+                <div class="ml-1">
+                  <a
+                    href="https://map.kakao.com/link/to/${
+                      value.name
+                    },${lat},${lng}"
+                    target="_blank"
+                    class="w-16"
+                  >
+                    <img src="/img/kakao_map.png" class="w-6"></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+            `,
                 iwPosition = new kakao.maps.LatLng(lat, lng); //인포윈도우 표시 위치입니다
 
-              // 인포윈도우를 생성합니다
-              var infowindow = new kakao.maps.InfoWindow({
-                position: iwPosition,
+              tmpOverlay = new kakao.maps.CustomOverlay({
                 content: iwContent,
+                map: tmpMap,
+                position: marker.getPosition(),
               });
 
-              // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
-              infowindow.open(tmpMap, marker);
+              kakao.maps.event.addListener(marker, "click", function () {
+                tmpOverlay.setMap(tmpMap);
+              });
             }
           });
         });
         setMap(tmpMap);
+        setOverlay(tmpOverlay);
       });
     };
 

@@ -28,10 +28,12 @@ const Home = (props: HomeProps) => {
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
             <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
             <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
-              <h1 className="text-2xl font-semibold mt-5">노란공테니스 YTRP</h1>
-              <h1 className="text-sm tracking-normal ml-8">
-                www.yellowball.co.kr
-              </h1>
+              <div className="w-full flex justify-center flex-col items-center">
+                <h1 className="text-2xl font-semibold mt-5">노란공테니스</h1>
+                <h1 className="text-sm tracking-normal">
+                  www.yellowball.co.kr
+                </h1>
+              </div>
               <h1 className="mt-3">누가 뭐래도</h1>
               <h1 className="">
                 테니스는 <span className="text-blue-600">건강</span>이고{" "}
@@ -91,7 +93,7 @@ const Home = (props: HomeProps) => {
                 router.push("/develop");
               }}
             >
-              <span className="text-sm md:text-2xl">테니스 레슨정보</span>
+              <span className="text-sm md:text-2xl">레슨/아카데미 찾기</span>
             </div>
 
             <div
@@ -101,7 +103,7 @@ const Home = (props: HomeProps) => {
                 router.push("/develop");
               }}
             >
-              <span className="text-sm md:text-2xl">테니스 클럽 정보</span>
+              <span className="text-sm md:text-2xl">클럽/동호회 찾기</span>
             </div>
 
             <div
@@ -111,7 +113,7 @@ const Home = (props: HomeProps) => {
                 router.push("/develop");
               }}
             >
-              <span className="text-sm md:text-2xl">실내 연습장 정보</span>
+              <span className="text-sm md:text-2xl">테니스샵 찾기</span>
             </div>
             <div
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"

@@ -3,7 +3,7 @@ export const courts = [
     name: "노란공테니스장",
     call: "010-5252-3366",
     homepage: "https://yellowball.co.kr",
-    location: "경기도 고양시 일산동구 성현로268번길 267-18",
+    location: "경기도 고양시 일산동구 성현로 \n 268번길 267-18",
     surface: "인조잔디",
     reservation: "예약가능",
     count: "2면",

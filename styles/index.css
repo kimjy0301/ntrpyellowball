@@ -135,6 +135,10 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 
+.bg-trans07 {
+  background: rgba(255, 255, 255, 0.8);
+}
+
 @keyframes hover-scale {
   0% {
     --tw-scale-x: 1;
