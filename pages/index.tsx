@@ -2,7 +2,6 @@ import Head from "next/head";
 import { GetStaticProps } from "next";
 import { Post } from "../prisma/model";
 import { useRouter } from "next/router";
-import KakaoMap from "../components/CourtsKakaoMap.js/index.js";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
