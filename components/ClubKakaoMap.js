@@ -188,7 +188,8 @@ const ClubKakaoMap = () => {
               });
 
               kakao.maps.event.addListener(marker, "click", function () {
-                tmpOverlay.setMap(tmpMap);
+                tmpOverlay.a.childNodes[1].classList.toggle("hidden");
+                tmpOverlay.a.childNodes[1].classList.toggle("flex");
               });
             }
           });

@@ -182,9 +182,8 @@ const AcademyKakaoMap = () => {
               });
 
               kakao.maps.event.addListener(marker, "click", function () {
-                tmpOverlay.a.childNodes[1].classList.remove("hidden");
-                tmpOverlay.a.childNodes[1].classList.add("flex");
-                console.log(tmpOverlay.a.childNodes[1]);
+                tmpOverlay.a.childNodes[1].classList.toggle("hidden");
+                tmpOverlay.a.childNodes[1].classList.toggle("flex");
               });
             }
           });
