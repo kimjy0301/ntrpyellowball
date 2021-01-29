@@ -35,7 +35,7 @@ export const academies = [
     location: "경기도 부천시 부천로103 3층",
     call: "032-218-0707",
     homepage: "https://songtennis.modoo.at",
-    court: "실내 연습장",
+    court: "볼머신, 옥상연습장",
     etc: "",
   },
   {
@@ -45,6 +45,15 @@ export const academies = [
     call: "032-555-4644",
     homepage: "https://songtennis.modoo.at",
     court: "실내 연습장",
+    etc: "",
+  },
+  {
+    index: 5,
+    name: "송지호실내테니스아카데미",
+    location: "경기도 시흥시 서해안로 1579",
+    call: "031-312-0779",
+    homepage: "https://songtennis.modoo.at",
+    court: "볼머신",
     etc: "",
   },
 ];
