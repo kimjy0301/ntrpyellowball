@@ -100,6 +100,7 @@ const ShopKakaoMap = () => {
               var marker = new kakao.maps.Marker({
                 position: markerPosition,
                 image: markerImage, // 마커이미지 설정
+                title: value.index,
               });
 
               // 마커가 지도 위에 표시되도록 설정합니다
@@ -184,8 +185,10 @@ const ShopKakaoMap = () => {
               });
 
               kakao.maps.event.addListener(marker, "click", function () {
-                tmpOverlay.a.childNodes[1].classList.toggle("hidden");
-                tmpOverlay.a.childNodes[1].classList.toggle("flex");
+                let divId = `court-${marker.getTitle()}`;
+                let div = document.getElementById(divId);
+                div.classList.toggle("hidden");
+                div.classList.toggle("flex");
               });
             }
           });
