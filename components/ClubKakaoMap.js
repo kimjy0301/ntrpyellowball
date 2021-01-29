@@ -241,7 +241,7 @@ const ClubKakaoMap = () => {
                 className="ml-2 px-2 w-64 border border-yellow-1"
                 type="text"
                 value={searchText}
-                placeholder="지역명, 클럽명으로 검색"
+                placeholder="지역명, 이름으로 검색"
                 onChange={onChangeText}
               ></input>
             </div>

@@ -108,32 +108,32 @@ const CourtsKakaoMap = () => {
               var iwContent = `               
               <div id="court-${
                 value.index
-              }" class="py-3 px-4 rounded-md w-72 text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-36">
+              }" class="py-3 px-4 rounded-md text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-36">
               <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">코트명 : </div>
+          
                 <div class="ml-1">${value.name}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">주소 : </div>
+          
                 <div class="ml-1 overflow-auto">
                 ${value.location.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">전화번호 : </div>
+          
                 <div class="ml-1"><a href="tel:${value.call}">${
                   value.call
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">코트 : </div>
+          
                 <div class="ml-1">${value.court}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">홈페이지 : </div>
+          
                 <div class="ml-1 underline">
                   <a href="${value.homepage}" target="_blank">
                     ${value.homepage
@@ -143,7 +143,7 @@ const CourtsKakaoMap = () => {
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">기타 : </div>
+          
                 <div class="ml-1">                 
                       ${value.etc.replace(/\n/g, "<br/>")}
                 </div>
@@ -235,7 +235,7 @@ const CourtsKakaoMap = () => {
                 className="ml-2 px-2 w-64 border border-yellow-1"
                 type="text"
                 value={searchText}
-                placeholder="지역명, 코트장이름으로 검색"
+                placeholder="지역명, 이름으로 검색"
                 onChange={onChangeText}
               ></input>
             </div>
