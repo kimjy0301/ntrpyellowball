@@ -137,16 +137,25 @@ const KakaoMap = () => {
       
               <div class="flex mt-2 justify-center items-center">
                 <div class="w-14 text-right ">길찾기 : </div>
-                <div class="ml-1">
+                <div class="ml-1 flex">
                   <a
                     href="https://map.kakao.com/link/to/${
                       value.name
                     },${lat},${lng}"
                     target="_blank"
-                    class="w-16"
+                    class="w-8"
                   >
                     <img src="/img/kakao_map.png" class="w-6"></img>
                   </a>
+                  <a href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx75a1cc684f7241998e80d788bc58aa39&name=${
+                    value.name
+                  }&lon=${lng}&lat=${lat}"
+                    target="_blank"
+                    class="w-8"
+                  >
+                    <img src="/img/t.png" class="w-6"></img>
+                  </a>
+
                 </div>
               </div>
             </div>
