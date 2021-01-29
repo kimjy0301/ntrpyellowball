@@ -29,6 +29,24 @@ export const academies = [
     court: "하드코트 미니코트 3면",
     etc: "",
   },
+  {
+    index: 3,
+    name: "송지호실내테니스아카데미",
+    location: "경기도 부천시 부천로103 3층",
+    call: "032-218-0707",
+    homepage: "https://songtennis.modoo.at",
+    court: "실내 연습장",
+    etc: "",
+  },
+  {
+    index: 4,
+    name: "송지호실내테니스아카데미",
+    location: "인천시 계양구 계산동 18-17",
+    call: "032-555-4644",
+    homepage: "https://songtennis.modoo.at",
+    court: "실내 연습장",
+    etc: "",
+  },
 ];
 
 export const shops = [
