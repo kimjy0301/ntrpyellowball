@@ -20,10 +20,6 @@ const Home = (props: HomeProps) => {
       <Head>
         <title>노란공테니스</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        ></meta>
       </Head>
 
       <div className="h-full overflow-y-auto md:flex md:justify-center md:items-center md:-mt-14 mx-auto">

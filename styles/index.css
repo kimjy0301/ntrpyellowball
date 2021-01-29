@@ -161,13 +161,10 @@ body {
   }
 }
 
-/* Safari 7.1+ */
-
-_::-webkit-full-page-media,
-_:future,
-:root .safari_only {
-  color: #0000ff;
-  background-color: #cccccc;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #safari {
+    background-color: #ccc;
+  }
 }
 
 /* Start purging... */
