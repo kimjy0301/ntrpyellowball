@@ -1,10 +1,10 @@
 /*global kakao*/
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
-import { courts } from "./courtsData";
+import { clubs } from "./courtsData";
 import { hiddenContent, showContent } from "./jsFunction";
 
-const CourtsKakaoMap = () => {
+const ClubKakaoMap = () => {
   const [searchText, setSearchText] = useState("");
   const [map, setMap] = useState();
   const [geocoder, setGeocoder] = useState();
@@ -29,7 +29,7 @@ const CourtsKakaoMap = () => {
     }, 300);
   }, [map]);
 
-  filterdCourts = courts.filter((value) => {
+  filterdCourts = clubs.filter((value) => {
     if (
       searchText !== "" &&
       (value.location.toUpperCase().includes(searchText.toUpperCase()) ||
@@ -75,7 +75,7 @@ const CourtsKakaoMap = () => {
         let tmpGeocoder = new kakao.maps.services.Geocoder();
         setGeocoder(tmpGeocoder);
         let tmpOverlay;
-        courts.map((value) => {
+        clubs.map((value) => {
           let lat;
           let lng;
           tmpGeocoder.addressSearch(value.location, function (result, status) {
@@ -113,27 +113,39 @@ const CourtsKakaoMap = () => {
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">코트명 : </div>
+                <div class="w-16 text-right">클럽명 : </div>
                 <div class="ml-1">${value.name}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">주소 : </div>
+                <div class="w-16 text-right">주소 : </div>
                 <div class="ml-1 overflow-auto">
                 ${value.location.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">전화번호 : </div>
+                <div class="w-16 text-right">전화번호 : </div>
                 <div class="ml-1"><a href="tel:${value.call}">${
                   value.call
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">코트 : </div>
-                <div class="ml-1">${value.court}</div>
+                <div class="w-16 text-right">운동시간 : </div>
+                <div class="ml-1">${value.when}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">홈페이지 : </div>
+                <div class="w-16 text-right">자격조건 : </div>
+                <div class="ml-1">                 
+                      ${value.who}
+                </div>
+              </div>
+              <div class="flex mt-1">
+                <div class="w-16 text-right">회비 : </div>
+                <div class="ml-1">                 
+                      ${value.dues}
+                </div>
+              </div>
+              <div class="flex mt-1">
+                <div class="w-16 text-right">홈페이지 : </div>
                 <div class="ml-1 underline">
                   <a href="${value.homepage}" target="_blank">
                     ${value.homepage
@@ -142,14 +154,8 @@ const CourtsKakaoMap = () => {
                   </a>
                 </div>
               </div>
-              <div class="flex mt-1">
-                <div class="w-14 text-right">기타 : </div>
-                <div class="ml-1">                 
-                      ${value.etc.replace(/\n/g, "<br/>")}
-                </div>
-              </div>
               <div class="flex mt-2 justify-center items-center">
-                <div class="w-14 text-right ">길찾기 : </div>
+                <div class="w-16 text-right ">길찾기 : </div>
                 <div class="ml-1 flex">
                   <a
                     href="https://map.kakao.com/link/to/${
@@ -235,7 +241,7 @@ const CourtsKakaoMap = () => {
                 className="ml-2 px-2 w-64 border border-yellow-1"
                 type="text"
                 value={searchText}
-                placeholder="지역명, 코트장이름으로 검색"
+                placeholder="지역명, 클럽명으로 검색"
                 onChange={onChangeText}
               ></input>
             </div>
@@ -257,10 +263,16 @@ const CourtsKakaoMap = () => {
                     }, 200);
                   }}
                 >
-                  <div className="text-xl mr-2">{i + 1}.</div>
+                  <div className="text-xl">{i + 1}.</div>
                   <div>
-                    <div>코트명 : {value.name}</div>
-                    <div>주소 : {value.location}</div>
+                    <div className="flex ">
+                      <div className="w-12 mr-1 text-right">클럽명 : </div>
+                      <div>{value.name}</div>
+                    </div>
+                    <div className="flex ">
+                      <div className="w-12 mr-1 text-right">주소 :</div>
+                      <div> {value.location}</div>
+                    </div>
                   </div>
                 </div>
               );
@@ -272,4 +284,4 @@ const CourtsKakaoMap = () => {
   );
 };
 
-export default CourtsKakaoMap;
+export default ClubKakaoMap;

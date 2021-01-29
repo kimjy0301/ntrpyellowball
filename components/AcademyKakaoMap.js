@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { academies } from "./courtsData";
 import { hiddenContent, showContent } from "./jsFunction";
 
-const CourtsKakaoMap = () => {
+const AcademyKakaoMap = () => {
   const [searchText, setSearchText] = useState("");
   const [map, setMap] = useState();
   const [geocoder, setGeocoder] = useState();
@@ -113,27 +113,27 @@ const CourtsKakaoMap = () => {
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">아카데미명 : </div>
+                <div class="w-16 text-right">아카데미명 : </div>
                 <div class="ml-1">${value.name}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">주소 : </div>
+                <div class="w-16 text-right">주소 : </div>
                 <div class="ml-1 overflow-auto">
                 ${value.location.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">전화번호 : </div>
+                <div class="w-16 text-right">전화번호 : </div>
                 <div class="ml-1"><a href="tel:${value.call}">${
                   value.call
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">실내/실외 : </div>
+                <div class="w-16 text-right">실내/실외 : </div>
                 <div class="ml-1">${value.court}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">홈페이지 : </div>
+                <div class="w-16 text-right">홈페이지 : </div>
                 <div class="ml-1 underline">
                   <a href="${value.homepage}" target="_blank">
                     ${value.homepage
@@ -143,13 +143,13 @@ const CourtsKakaoMap = () => {
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">기타 : </div>
+                <div class="w-16 text-right">기타 : </div>
                 <div class="ml-1">                 
                       ${value.etc.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-2 justify-center items-center">
-                <div class="w-14 text-right ">길찾기 : </div>
+                <div class="w-16 text-right ">길찾기 : </div>
                 <div class="ml-1 flex">
                   <a
                     href="https://map.kakao.com/link/to/${
@@ -235,7 +235,7 @@ const CourtsKakaoMap = () => {
                 className="ml-2 px-2 w-64 border border-yellow-1"
                 type="text"
                 value={searchText}
-                placeholder="지역명, 아카데미 이름으로 검색"
+                placeholder="지역명,아카데미이름으로 검색"
                 onChange={onChangeText}
               ></input>
             </div>
@@ -278,4 +278,4 @@ const CourtsKakaoMap = () => {
   );
 };
 
-export default CourtsKakaoMap;
+export default AcademyKakaoMap;

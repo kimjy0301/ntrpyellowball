@@ -99,7 +99,7 @@ const Home = (props: HomeProps) => {
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
                 e.preventDefault();
-                router.push("/develop");
+                router.push("/club");
               }}
             >
               <span className="text-sm md:text-2xl">클럽/동호회 찾기</span>
@@ -109,7 +109,7 @@ const Home = (props: HomeProps) => {
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
                 e.preventDefault();
-                router.push("/develop");
+                router.push("/shop");
               }}
             >
               <span className="text-sm md:text-2xl">테니스샵 찾기</span>
