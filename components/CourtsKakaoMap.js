@@ -18,7 +18,7 @@ const CourtsKakaoMap = () => {
     if (searchText === "") {
       setTimeout(() => {
         hiddenContent(1);
-      }, 200);
+      }, 400);
     }
     setSearchText(value);
   };
