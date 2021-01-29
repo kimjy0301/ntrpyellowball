@@ -182,7 +182,9 @@ const AcademyKakaoMap = () => {
               });
 
               kakao.maps.event.addListener(marker, "click", function () {
-                tmpOverlay.setMap(tmpMap);
+                tmpOverlay.a.childNodes[1].classList.remove("hidden");
+                tmpOverlay.a.childNodes[1].classList.add("flex");
+                console.log(tmpOverlay.a.childNodes[1]);
               });
             }
           });
@@ -257,7 +259,7 @@ const AcademyKakaoMap = () => {
                     }, 200);
                   }}
                 >
-                  <div className="text-xl">{i + 1}.</div>
+                  <div className="text-xl mr-2">{i + 1}.</div>
                   <div>
                     <div className="flex ">
                       <div>{value.name}</div>
