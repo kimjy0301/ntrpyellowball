@@ -13,7 +13,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>노란공테니스 YTRP - 테니스 코트 정보</title>
+        <title>노란공테니스 - 테니스 코트 정보</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-full h-full flex justify-center items-center flex-col p-3">

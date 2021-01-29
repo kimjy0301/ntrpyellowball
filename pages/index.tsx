@@ -19,7 +19,7 @@ const Home = (props: HomeProps) => {
   return (
     <>
       <Head>
-        <title>노란공테니스 YTRP</title>
+        <title>노란공테니스</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
