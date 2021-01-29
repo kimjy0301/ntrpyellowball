@@ -116,22 +116,26 @@ const KakaoMap = () => {
               </div>
               <div class="flex mt-1">
                 <div class="w-14 text-right">전화번호 : </div>
-                <div class="ml-1">${value.call}</div>
+                <div class="ml-1"><a href="tel:${value.call}">${
+                  value.call
+                }</a></div>
               </div>
               <div class="flex mt-1">
                 <div class="w-14 text-right">코트 : </div>
-                <div class="ml-1">${value.surface}</div>
+                <div class="ml-1">${value.court}</div>
               </div>
               <div class="flex mt-1">
                 <div class="w-14 text-right">홈페이지 : </div>
-                <div class="ml-1">
+                <div class="ml-1 underline">
                   <a href="${value.homepage}" target="_blank">
-                    http://yellowball.co.kr
+                    ${value.homepage
+                      .replace("https://", "")
+                      .replace("http://", "")}
                   </a>
                 </div>
               </div>
       
-              <div class="flex mt-1">
+              <div class="flex mt-2 justify-center items-center">
                 <div class="w-14 text-right ">길찾기 : </div>
                 <div class="ml-1">
                   <a
