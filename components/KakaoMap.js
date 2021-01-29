@@ -203,10 +203,10 @@ const KakaoMap = () => {
               검색 :
               <input
                 ref={inputRef}
-                className="ml-2 px-2 w-48 border border-yellow-1"
+                className="ml-2 px-2 w-64 border border-yellow-1"
                 type="text"
                 value={searchText}
-                placeholder="테니스장명, 주소"
+                placeholder="지역명, 코트장이름으로 검색"
                 onChange={onChangeText}
               ></input>
             </div>
