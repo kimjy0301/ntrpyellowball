@@ -1,16 +1,25 @@
-import { courts } from "./courtsData";
+import { courts, academies, clubs, shops } from "./courtsData";
 
-export const hiddenContent = (courtindex) => {
-  courts.map((value) => {
+export const hiddenContent = (category) => {
+  let arrayData;
+  if (category === "court") {
+    arrayData = courts;
+  } else if (category === "shop") {
+    arrayData = shops;
+  } else if (category === "academy") {
+    arrayData = academies;
+  } else if (category === "club") {
+    arrayData = clubs;
+  }
+
+  arrayData.map((value) => {
     let courtContent = document.getElementById(`court-${value.index}`);
-    console.log(courtContent);
     courtContent?.classList.remove("flex");
     courtContent?.classList.add("hidden");
   });
 };
 export const showContent = (courtindex) => {
   let courtContent = document.getElementById(`court-${courtindex}`);
-  console.log(courtContent);
   courtContent?.classList.add("flex");
   courtContent?.classList.remove("hidden");
 };
