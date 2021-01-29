@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { courts } from "./courtsData";
 import { hiddenContent, showContent } from "./jsFunction";
 
-const KakaoMap = () => {
+const CourtsKakaoMap = () => {
   const [searchText, setSearchText] = useState("");
   const [map, setMap] = useState();
   const [geocoder, setGeocoder] = useState();
@@ -272,4 +272,4 @@ const KakaoMap = () => {
   );
 };
 
-export default KakaoMap;
+export default CourtsKakaoMap;

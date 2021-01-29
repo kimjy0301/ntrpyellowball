@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import KakaoMap from "../../components/CourtsKakaoMap";
+import CourtsKakaoMap from "../../components/CourtsKakaoMap";
 
 const index = () => {
   const [loaded, setLoaded] = useState(false);
@@ -21,7 +21,7 @@ const index = () => {
           className={`w-full flex relative flex-col h-full md:shadow-lg justify-center border-yellow-1 border-2  rounded-md items-center p-4 bg-white mx-1 my-1 shadow-lg md:max-w-xs1`}
         >
           <div className="w-full h-full">
-            <KakaoMap></KakaoMap>
+            <CourtsKakaoMap></CourtsKakaoMap>
           </div>
         </div>
       </div>
