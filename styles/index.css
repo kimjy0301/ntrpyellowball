@@ -83,7 +83,7 @@ body {
   width: 100%;
   height: 100%;
 
-  @apply bg-gray-100 dark:bg-gray-900 text-gray-800 font-semibold text-sm lg:text-base;
+  @apply bg-gray-100 text-gray-800 font-semibold text-sm lg:text-base;
 }
 
 .font-q {
