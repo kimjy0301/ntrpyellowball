@@ -111,44 +111,37 @@ const ClubKakaoMap = () => {
               var iwContent = `               
               <div id="court-${
                 value.index
-              }" class="py-3 px-4 rounded-md w-72 text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-36">
+              }" class="py-3 px-4 rounded-md text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-28">
               <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">클럽명 : </div>
-                <div class="ml-1">${value.name}</div>
+                <div class="ml-1">${value.name}(${value.court})</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">주소 : </div>
                 <div class="ml-1 overflow-auto">
                 ${value.location.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">전화번호 : </div>
                 <div class="ml-1"><a href="tel:${value.call}">${
                   value.call
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">운동시간 : </div>
                 <div class="ml-1">${value.when}</div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">자격조건 : </div>
                 <div class="ml-1">                 
-                      ${value.who}
+                      ${value.who.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">회비 : </div>
                 <div class="ml-1">                 
                       ${value.dues}
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="w-16 text-right">홈페이지 : </div>
                 <div class="ml-1 underline">
                   <a href="${value.homepage}" target="_blank">
                     ${value.homepage
@@ -269,14 +262,12 @@ const ClubKakaoMap = () => {
                     }, 200);
                   }}
                 >
-                  <div className="text-xl">{i + 1}.</div>
+                  <div className="text-xl mr-2">{i + 1}.</div>
                   <div>
                     <div className="flex ">
-                      <div className="w-12 mr-1 text-right">클럽명 : </div>
                       <div>{value.name}</div>
                     </div>
                     <div className="flex ">
-                      <div className="w-12 mr-1 text-right">주소 :</div>
                       <div> {value.location}</div>
                     </div>
                   </div>
