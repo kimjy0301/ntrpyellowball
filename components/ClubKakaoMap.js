@@ -259,14 +259,8 @@ const CourtsKakaoMap = () => {
                 >
                   <div className="text-xl mr-2">{i + 1}.</div>
                   <div>
-                    <div className="flex ">
-                      <div className="w-12 mr-1 text-right">코트명 : </div>
-                      <div>{value.name}</div>
-                    </div>
-                    <div className="flex ">
-                      <div className="w-12 mr-1 text-right">주소 :</div>
-                      <div> {value.location}</div>
-                    </div>
+                    <div>코트명 : {value.name}</div>
+                    <div>주소 : {value.location}</div>
                   </div>
                 </div>
               );

@@ -1,7 +1,7 @@
 /*global kakao*/
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
-import { courts } from "./courtsData";
+import { academies } from "./courtsData";
 import { hiddenContent, showContent } from "./jsFunction";
 
 const CourtsKakaoMap = () => {
@@ -29,7 +29,7 @@ const CourtsKakaoMap = () => {
     }, 300);
   }, [map]);
 
-  filterdCourts = courts.filter((value) => {
+  filterdCourts = academies.filter((value) => {
     if (
       searchText !== "" &&
       (value.location.toUpperCase().includes(searchText.toUpperCase()) ||
@@ -75,7 +75,7 @@ const CourtsKakaoMap = () => {
         let tmpGeocoder = new kakao.maps.services.Geocoder();
         setGeocoder(tmpGeocoder);
         let tmpOverlay;
-        courts.map((value) => {
+        academies.map((value) => {
           let lat;
           let lng;
           tmpGeocoder.addressSearch(value.location, function (result, status) {
@@ -113,7 +113,7 @@ const CourtsKakaoMap = () => {
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">코트명 : </div>
+                <div class="w-14 text-right">아카데미명 : </div>
                 <div class="ml-1">${value.name}</div>
               </div>
               <div class="flex mt-1">
@@ -129,7 +129,7 @@ const CourtsKakaoMap = () => {
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="w-14 text-right">코트 : </div>
+                <div class="w-14 text-right">실내/실외 : </div>
                 <div class="ml-1">${value.court}</div>
               </div>
               <div class="flex mt-1">
@@ -235,7 +235,7 @@ const CourtsKakaoMap = () => {
                 className="ml-2 px-2 w-64 border border-yellow-1"
                 type="text"
                 value={searchText}
-                placeholder="지역명, 코트장이름으로 검색"
+                placeholder="지역명, 아카데미 이름으로 검색"
                 onChange={onChangeText}
               ></input>
             </div>
@@ -257,14 +257,14 @@ const CourtsKakaoMap = () => {
                     }, 200);
                   }}
                 >
-                  <div className="text-xl mr-2">{i + 1}.</div>
+                  <div className="text-xl">{i + 1}.</div>
                   <div>
                     <div className="flex ">
-                      <div className="w-12 mr-1 text-right">코트명 : </div>
+                      <div className="w-20 mr-1 text-right">아카데미명 : </div>
                       <div>{value.name}</div>
                     </div>
                     <div className="flex ">
-                      <div className="w-12 mr-1 text-right">주소 :</div>
+                      <div className="w-20 mr-1 text-right">주소 :</div>
                       <div> {value.location}</div>
                     </div>
                   </div>
