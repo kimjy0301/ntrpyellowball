@@ -260,11 +260,9 @@ const AcademyKakaoMap = () => {
                   <div className="text-xl">{i + 1}.</div>
                   <div>
                     <div className="flex ">
-                      <div className="w-20 mr-1 text-right">아카데미명 : </div>
                       <div>{value.name}</div>
                     </div>
                     <div className="flex ">
-                      <div className="w-20 mr-1 text-right">주소 :</div>
                       <div> {value.location}</div>
                     </div>
                   </div>
