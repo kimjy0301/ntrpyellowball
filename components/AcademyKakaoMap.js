@@ -108,7 +108,7 @@ const AcademyKakaoMap = () => {
               var iwContent = `               
               <div id="court-${
                 value.index
-              }" class="py-3 px-4 rounded-md text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-36">
+              }" class="py-3 px-4 rounded-md text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-28">
               <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
                 닫기
               </div>
