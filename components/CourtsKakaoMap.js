@@ -25,7 +25,9 @@ const CourtsKakaoMap = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      map?.setCenter(new kakao.maps.LatLng(37.7070107983045, 126.816936939352));
+      map?.setCenter(
+        new kakao.maps.LatLng(37.566653033875774, 126.97876549797886)
+      );
     }, 300);
   }, [map]);
 
