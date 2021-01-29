@@ -160,6 +160,15 @@ body {
   }
 }
 
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media,
+_:future,
+:root .safari_only {
+  color: #0000ff;
+  background-color: #cccccc;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
