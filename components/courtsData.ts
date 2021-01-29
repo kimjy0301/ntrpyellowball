@@ -8,15 +8,6 @@ export const courts = [
     court: "실내 레슨/연습장, 실외1면",
     etc: "",
   },
-  {
-    index: 2,
-    name: "VTG테니스장",
-    location: "서울특별시 영등포구 여의나루로 42 \n 여의도종합상가 4층",
-    call: "010-6367-4405",
-    homepage: "https://vtgtennis.modoo.at",
-    court: "하드코트 미니코트 3면",
-    etc: "",
-  },
 ];
 
 export const academies = [
@@ -27,6 +18,15 @@ export const academies = [
     call: "010-5252-3366",
     homepage: "https://blog.naver.com/p139154",
     court: "실내 레슨/연습장, 실외1면",
+    etc: "",
+  },
+  {
+    index: 2,
+    name: "VTG테니스장",
+    location: "서울특별시 영등포구 여의나루로 42 \n 여의도종합상가 4층",
+    call: "010-6367-4405",
+    homepage: "https://vtgtennis.modoo.at",
+    court: "하드코트 미니코트 3면",
     etc: "",
   },
 ];
