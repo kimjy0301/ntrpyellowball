@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { courts } from "./courtsData";
+import { hiddenContent, showContent } from "./jsFunction";
 
 const KakaoMap = () => {
   const [searchText, setSearchText] = useState("");
@@ -14,6 +15,11 @@ const KakaoMap = () => {
   let filterdCourts = [];
 
   const onChangeText = ({ target: { value } }) => {
+    if (searchText === "") {
+      setTimeout(() => {
+        hiddenContent(1);
+      }, 200);
+    }
     setSearchText(value);
   };
 
@@ -100,7 +106,9 @@ const KakaoMap = () => {
               marker.setMap(tmpMap);
 
               var iwContent = `               
-              <div class="py-3 px-4 rounded-md w-72 text-xs bg-trans07 absolute flex flex-col justify-center shadow items-start bottom-20 -ml-36">
+              <div id="court-${
+                value.index
+              }" class="py-3 px-4 rounded-md w-72 text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-36">
               <div onClick="" class="absolute cursor-pointer bg-red-500 top-1 right-1 text text-white py-1 px-2 rounded hidden">
                 닫기
               </div>
@@ -189,7 +197,7 @@ const KakaoMap = () => {
     };
   }, []);
 
-  function getLocationByAddress(address) {
+  function getLocationByAddress(address, courtindex) {
     geocoder.addressSearch(address, function (result, status) {
       // 정상적으로 검색이 완료됐으면
       if (status === kakao.maps.services.Status.OK) {
@@ -201,6 +209,9 @@ const KakaoMap = () => {
         map.panTo(coords);
       }
     });
+    setTimeout(() => {
+      showContent(courtindex);
+    }, 200);
   }
 
   return (
@@ -241,7 +252,7 @@ const KakaoMap = () => {
 
                     setTimeout(() => {
                       if (searchText !== "") {
-                        getLocationByAddress(value.location);
+                        getLocationByAddress(value.location, value.index);
                       }
                     }, 200);
                   }}

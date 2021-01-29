@@ -1,5 +1,6 @@
 export const courts = [
   {
+    index: 1,
     name: "노란공테니스장",
     location: "경기도 고양시 일산동구 성현로 \n 268번길 267-18",
     call: "010-5252-3366",
@@ -8,6 +9,7 @@ export const courts = [
     etc: "",
   },
   {
+    index: 2,
     name: "VTG테니스장",
     location: "서울특별시 영등포구 여의나루로 42 \n 여의도종합상가 4층",
     call: "010-6367-4405",
