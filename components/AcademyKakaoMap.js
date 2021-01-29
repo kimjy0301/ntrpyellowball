@@ -18,7 +18,7 @@ const AcademyKakaoMap = () => {
     if (searchText === "") {
       setTimeout(() => {
         hiddenContent("academy");
-      }, 200);
+      }, 400);
     }
     setSearchText(value);
   };

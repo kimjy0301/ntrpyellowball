@@ -18,7 +18,7 @@ const ClubKakaoMap = () => {
     if (searchText === "") {
       setTimeout(() => {
         hiddenContent("club");
-      }, 200);
+      }, 400);
     }
     setSearchText(value);
   };

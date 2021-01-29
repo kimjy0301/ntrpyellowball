@@ -18,7 +18,7 @@ const ShopKakaoMap = () => {
     if (searchText === "") {
       setTimeout(() => {
         hiddenContent("shop");
-      }, 200);
+      }, 400);
     }
     setSearchText(value);
   };
