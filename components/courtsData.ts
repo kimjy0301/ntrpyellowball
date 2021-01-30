@@ -150,4 +150,15 @@ export const clubs = [
     who: "테니스 열정 가득한 테니스인",
     dues: "입회비 10만원 / 월 5만원",
   },
+  {
+    index: 4,
+    name: "둥지 테니스클럽",
+    court: "오륜테니스장",
+    location: "송파구 동남로 417 ",
+    call: "010-9088-2061",
+    homepage: "https://band.us/band/79532129",
+    when: "월~금 오전 07시~10시",
+    who: "남,여 게임 가능하신분 ",
+    dues: "입회비 10만원 / 월 4만원",
+  },
 ];
