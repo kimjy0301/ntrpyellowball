@@ -129,9 +129,9 @@ const ShopKakaoMap = () => {
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="ml-1"><a href="tel:${value.call}">${
+                <div class="ml-1"><a href="tel:${
                   value.call
-                }</a></div>
+                }">${value.call.replace(/\n/g, "<br/>")}</a></div>
               </div>
               <div class="flex mt-1">
                 <div class="ml-1 underline">

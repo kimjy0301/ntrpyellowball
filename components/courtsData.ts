@@ -110,7 +110,8 @@ export const shops = [
     name: "썬 스포츠",
     ceo: "김영식",
     location: "서울시 중구 을지로 248 \n (을지로6가, 국립중앙의료원 건너편)",
-    call: "02-2268-3663",
+    call: "매장 : 02-2268-3663 \n 담당자 : 010-7566-8081",
+
     homepage: "https://band.us/n/aba743ee0dHas",
     category: "테니스&배드민턴&탁구&스쿼시 \n 아디다스 스페셜 스토어",
   },
