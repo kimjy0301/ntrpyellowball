@@ -75,6 +75,15 @@ export const academies = [
     court: "실내 레슨코트1면/연습코트1면\n(정식규격에서 좌우위아래 50센치작음)",
     etc: "인조잔디코트/볼머신/스크린테니스/샤워실",
   },
+  {
+    index: 8,
+    name: "손오공 테니스 아카데미",
+    location: "서울 영등포구 가마산로 540 \n 바다마을 상가",
+    call: "02-845-2800",
+    homepage: "http://cafe.naver.com/sonogongtennis",
+    court: "하드코트,볼머신,샤워장,라커",
+    etc: "테니스 용품및 거트수리 샾",
+  },
 ];
 
 export const shops = [
@@ -95,6 +104,15 @@ export const shops = [
     call: "051-724-5009",
     homepage: "http://www.jujusports.co.kr",
     category: "테니스 포함 모든 스포츠 용품",
+  },
+  {
+    index: 3,
+    name: "썬 스포츠",
+    ceo: "김영식",
+    location: "서울시 중구 을지로 248 \n (을지로6가, 국립중앙의료원 건너편)",
+    call: "02-2268-3663",
+    homepage: "https://band.us/n/aba743ee0dHas",
+    category: "테니스&배드민턴&탁구&스쿼시 \n 아디다스 스페셜 스토어",
   },
 ];
 
@@ -120,5 +138,16 @@ export const clubs = [
     when: "매일 오전 9시 ~ 오후 9시",
     who: "남성:30~50대 은배부이상 \n 여성:전국대회 출전 및 입상자",
     dues: "입회비 20만원 / 월 2만원",
+  },
+  {
+    index: 3,
+    name: "포인트 클럽",
+    court: "부천 복사골 테니스장",
+    location: "경기 부천시 장말로293번길 45",
+    call: "010-7332-3598",
+    homepage: "",
+    when: "화,목 저녁 6시~10시 \n 토,일 오전 10시~14시",
+    who: "테니스 열정 가득한 테니스인",
+    dues: "입회비 10만원 / 월 5만원",
   },
 ];

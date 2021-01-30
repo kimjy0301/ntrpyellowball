@@ -116,11 +116,11 @@ const ClubKakaoMap = () => {
                 닫기
               </div>
               <div class="flex mt-1">
-                <div class="ml-1">${value.name}</div>
+                <div class="ml-1">${value.name.replace(/\n/g, "<br/>")}</div>
               </div>
               <div class="flex mt-1">
                 <div class="ml-1 overflow-auto">
-                ${value.court}
+                ${value.court.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">
@@ -143,7 +143,7 @@ const ClubKakaoMap = () => {
               </div>
               <div class="flex mt-1">
                 <div class="ml-1">                 
-                      ${value.dues}
+                      ${value.dues.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-1">

@@ -144,7 +144,7 @@ const ShopKakaoMap = () => {
               </div>
               <div class="flex mt-1">
                 <div class="ml-1 overflow-auto">
-                ${value.category}
+                ${value.category.replace(/\n/g, "<br/>")}
                 </div>
               </div>
               <div class="flex mt-2 justify-center items-center">
