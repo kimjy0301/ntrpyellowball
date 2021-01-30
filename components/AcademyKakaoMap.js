@@ -133,7 +133,7 @@ const AcademyKakaoMap = () => {
               </div>
               <div class="flex mt-1">
                
-                <div class="ml-1">${value.court}</div>
+                <div class="ml-1">${value.court.replace(/\n/g, "<br/>")}</div>
               </div>
               <div class="flex mt-1">
                

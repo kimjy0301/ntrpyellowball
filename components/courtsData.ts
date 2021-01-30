@@ -56,6 +56,25 @@ export const academies = [
     court: "볼머신",
     etc: "",
   },
+  {
+    index: 6,
+    name: "이주용 테니스 클리닉",
+    location:
+      "경기도 성남시 분당구 미금로 184\n 까치마을 1단지 105동 앞 테니스장",
+    call: "010-3306-7271",
+    homepage: "https://band.us/@tennisclinic",
+    court: "실외 정식규격코트 1면/ \n 보조코트(가로폭 정식코트의 3/5 크기)1면",
+    etc: "클레이코트",
+  },
+  {
+    index: 7,
+    name: "펀펀테니스",
+    location: "인천 서구 두밀로136 \n (경기도 김포 장기동 근처)",
+    call: "070-8843-7655",
+    homepage: "https://www.funfuntennis.co.kr",
+    court: "실내 레슨코트1면/연습코트1면\n(정식규격에서 좌우위아래 50센치작음)",
+    etc: "인조잔디코트/볼머신/스크린테니스/샤워실",
+  },
 ];
 
 export const shops = [
