@@ -154,7 +154,7 @@ export const clubs = [
     index: 4,
     name: "둥지 테니스클럽",
     court: "오륜테니스장",
-    location: "송파구 동남로 417 ",
+    location: "서울시 송파구 동남로 417 ",
     call: "010-9088-2061",
     homepage: "https://band.us/band/79532129",
     when: "월~금 오전 07시~10시",
