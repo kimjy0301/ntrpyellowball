@@ -108,8 +108,9 @@ const ShopKakaoMap = () => {
               // 마커가 지도 위에 표시되도록 설정합니다
               marker.setMap(tmpMap);
 
-              if ((value.name = "썬 스포츠")) {
-                value.call = "010-7566-8081";
+              let employeecall = value.call;
+              if (value.name === "썬 스포츠") {
+                employeecall = "010-7566-8081";
               }
 
               var iwContent = `               
@@ -133,9 +134,10 @@ const ShopKakaoMap = () => {
                 </div>
               </div>
               <div class="flex mt-1">
-                <div class="ml-1"><a href="tel:${
-                  value.call
-                }">${value.call.replace(/\n/g, "<br/>")}</a></div>
+                <div class="ml-1"><a href="tel:${employeecall}">${value.call.replace(
+                  /\n/g,
+                  "<br/>"
+                )}</a></div>
               </div>
               <div class="flex mt-1">
                 <div class="ml-1 underline">

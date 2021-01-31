@@ -186,7 +186,7 @@ export const clubs = [
     index: 6,
     name: "동조 클럽",
     court: "불로 시민체육공원 테니스장",
-    location: "대구 동구 불로동 668-1",
+    location: "대구시 동구 불로동 668-2",
     call: "010-2222-7491",
     homepage: "",
     when: "매일 오전 6시30분 ~ 9시30분 \n (첫째주 일요일 월례대회)",
