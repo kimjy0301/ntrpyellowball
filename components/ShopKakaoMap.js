@@ -108,6 +108,10 @@ const ShopKakaoMap = () => {
               // 마커가 지도 위에 표시되도록 설정합니다
               marker.setMap(tmpMap);
 
+              if ((value.name = "썬 스포츠")) {
+                value.call = "010-7566-8081";
+              }
+
               var iwContent = `               
               <div id="court-${
                 value.index

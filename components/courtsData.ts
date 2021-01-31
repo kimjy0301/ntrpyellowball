@@ -115,11 +115,31 @@ export const shops = [
     homepage: "https://band.us/n/aba743ee0dHas",
     category: "테니스&배드민턴&탁구&스쿼시 \n 아디다스 스페셜 스토어",
   },
+  {
+    index: 4,
+    name: "슈클 테니스화",
+    ceo: "김남용",
+    location: "경기도 용인시 처인구  \n 모현읍 포은대로 896",
+    call: "010-5333-6024",
+    homepage: "www.sucl.co.kr",
+    category: "대한민국 대표 테니스화",
+  },
 ];
 
 export const clubs = [
   {
     index: 1,
+    name: "노란공 레슨자 클럽",
+    court: "노란공테니스장",
+    location: "경기도 고양시 일산동구 성현로 \n 268번길 267-18",
+    call: "010-5252-3366",
+    homepage: "https://blog.naver.com/p139154",
+    when: "1년 365일 하루종일",
+    who: "노란공테니스 레슨자",
+    dues: "입회비 없음 / 월회비 없음",
+  },
+  {
+    index: 2,
     name: "한강 테니스클럽",
     court: "이촌한강공원 테니스장",
     location: "서울 용산구 용산동6가 450-1",
@@ -130,7 +150,7 @@ export const clubs = [
     dues: "입회비 20만원 / 월 4만원",
   },
   {
-    index: 2,
+    index: 3,
     name: "기흥 골드클럽",
     court: "용인 골드 테니스장",
     location: "경기 용인시 기흥구 고매동 33-12",
@@ -141,7 +161,7 @@ export const clubs = [
     dues: "입회비 20만원 / 월 2만원",
   },
   {
-    index: 3,
+    index: 4,
     name: "포인트 클럽",
     court: "부천 복사골 테니스장",
     location: "경기 부천시 장말로293번길 45",
@@ -152,7 +172,7 @@ export const clubs = [
     dues: "입회비 10만원 / 월 5만원",
   },
   {
-    index: 4,
+    index: 5,
     name: "둥지 테니스클럽",
     court: "오륜테니스장",
     location: "서울시 송파구 동남로 417 ",
@@ -160,6 +180,17 @@ export const clubs = [
     homepage: "https://band.us/band/79532129",
     when: "월~금 오전 07시~10시",
     who: "남,여 게임 가능하신분 ",
+    dues: "입회비 10만원 / 월 4만원",
+  },
+  {
+    index: 6,
+    name: "동조 클럽",
+    court: "불로 시민체육공원 테니스장",
+    location: "대구 동구 불로동 668-1",
+    call: "010-2222-7491",
+    homepage: "",
+    when: "매일 오전 6시30분 ~ 9시30분 \n (첫째주 일요일 월례대회)",
+    who: "누구나 가입환영",
     dues: "입회비 10만원 / 월 4만원",
   },
 ];
