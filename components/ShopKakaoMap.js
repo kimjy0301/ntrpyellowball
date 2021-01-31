@@ -132,7 +132,7 @@ const ShopKakaoMap = () => {
                 <div class="ml-1 overflow-auto">
                 ${value.location.replace(/\n/g, "<br/>")}
                 </div>
-              </div>
+              </div> 
               <div class="flex mt-1">
                 <div class="ml-1"><a href="tel:${employeecall}">${value.call.replace(
                   /\n/g,
