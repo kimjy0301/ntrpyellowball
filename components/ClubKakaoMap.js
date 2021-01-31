@@ -134,7 +134,7 @@ const ClubKakaoMap = () => {
                 }</a></div>
               </div>
               <div class="flex mt-1">
-                <div class="ml-1">${value.when}</div>
+                <div class="ml-1">${value.when.replace(/\n/g, "<br/>")}</div>
               </div>
               <div class="flex mt-1">
                 <div class="ml-1">                 
