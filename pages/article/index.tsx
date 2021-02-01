@@ -30,7 +30,6 @@ const index = () => {
           >
             <div className="w-full h-full flex items-center justify-center">
               <Swiper
-                navigation
                 pagination={{ clickable: true, type: "fraction" }}
                 className="w-full max-w-lg"
                 spaceBetween={50}
