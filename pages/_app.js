@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
 import "../styles/index.css";
 
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
-import "swiper/components/scrollbar/scrollbar.min.css";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
 
 function MyApp({ Component, pageProps }) {
   return (

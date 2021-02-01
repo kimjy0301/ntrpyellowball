@@ -1,13 +1,8 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/swiper-bundle.css";
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
-import "swiper/components/scrollbar/scrollbar.min.css";
 const index = () => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -15,6 +10,8 @@ const index = () => {
       setLoaded(true);
     }, 200);
   }, []);
+
+  SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
   return (
     <>
@@ -34,8 +31,7 @@ const index = () => {
             <div className="w-full h-full flex items-center justify-center">
               <Swiper
                 navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
+                pagination={{ clickable: true, type: "fraction" }}
                 className="w-full max-w-lg"
                 spaceBetween={50}
                 slidesPerView={1}
