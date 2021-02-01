@@ -32,37 +32,40 @@ const index = () => {
                 className="w-1/3"
                 spaceBetween={50}
                 slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
               >
                 <SwiperSlide>
                   <img
                     src="article/article_1.png"
-                    className="w-full h-96"
+                    className="w-full h-full"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="article/article_1.png"
-                    className="w-full h-96"
+                    className="w-full h-full"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="article/article_1.png"
-                    className="w-full h-96"
+                    className="w-full h-full"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="article/article_1.png"
-                    className="w-full h-96"
+                    className="w-full h-full"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="article/article_1.png"
-                    className="w-full h-96"
+                    className="w-full h-full"
                   ></img>
                 </SwiperSlide>
               </Swiper>
