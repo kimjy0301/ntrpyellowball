@@ -142,6 +142,13 @@ body {
   background: rgba(255, 255, 255, 0.72);
 }
 
+.swiper-button-prev {
+  @apply focus:outline-none;
+}
+.swiper-button-next {
+  @apply focus:outline-none;
+}
+
 @keyframes hover-scale {
   0% {
     --tw-scale-x: 1;
