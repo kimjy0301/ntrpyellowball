@@ -29,12 +29,9 @@ const index = () => {
           >
             <div className="w-full h-full flex items-center justify-center">
               <Swiper
-                className="w-1/3"
+                className="w-full max-w-lg"
                 spaceBetween={50}
                 slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
               >
