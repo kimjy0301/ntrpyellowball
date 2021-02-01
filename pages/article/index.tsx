@@ -4,6 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/swiper-bundle.css";
 
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/scrollbar/scrollbar.min.css";
 const index = () => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -29,6 +33,9 @@ const index = () => {
           >
             <div className="w-full h-full flex items-center justify-center">
               <Swiper
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
                 className="w-full max-w-lg"
                 spaceBetween={50}
                 slidesPerView={1}
