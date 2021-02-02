@@ -84,6 +84,15 @@ export const academies = [
     court: "하드코트,볼머신,샤워장,라커",
     etc: "테니스 용품및 거트수리 샾",
   },
+  {
+    index: 9,
+    name: "JTA 통 테니스",
+    location: "청주시 상당구 산성로  \n 92번길 13 5층",
+    call: "010-9666-5258",
+    homepage: "blog.naver.com/tennistong",
+    court: "실내 2/3크기 레슨코트 2면, 하드코트",
+    etc: "볼머신연습",
+  },
 ];
 
 export const shops = [
@@ -123,6 +132,16 @@ export const shops = [
     call: "010-5333-6024",
     homepage: "www.sucl.co.kr",
     category: "대한민국 대표 테니스화",
+  },
+  {
+    index: 6,
+    name: "스포츠 코리아[구,거성 테니스]",
+    ceo: "",
+    location: "경기도 성남시 분당구 \n 수내3동 불정로 255",
+    call: "031-711-0342",
+    homepage: "https://spotel.com/",
+    category:
+      "카카오채널 소식 \n https://pf.kakao.com/_xcBBad/chat \n 네이버 톡톡\n https://talk.naver.com/ct/wc4v44",
   },
 ];
 
@@ -194,7 +213,7 @@ export const clubs = [
     dues: "입회비 10만원 / 월 4만원",
   },
   {
-    index: 6,
+    index: 7,
     name: "나주 클럽",
     court: "남산공원 테니스장",
     location: "전라남도 나주시 남산길 23",
@@ -205,7 +224,7 @@ export const clubs = [
     dues: "입회비 5만원 / 남자 월 35,000원 \n 여자,65세이상 월 2만원",
   },
   {
-    index: 7,
+    index: 8,
     name: "365ET 밴드 모임",
     court: "부천 해그늘 체육공원 6번코트",
     location: "경기 부천시 상동",
@@ -213,6 +232,6 @@ export const clubs = [
     homepage: "https://band.us/band/78835140",
     when: "365일 매일 4시간",
     who: "게임 가능하시분 누구나",
-    dues: "입회비 없음 / 남자 월 1만원",
+    dues: "입회비 없음 / 월 1만원",
   },
 ];
