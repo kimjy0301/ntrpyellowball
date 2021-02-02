@@ -43,6 +43,30 @@ const index = () => {
                     className="w-full h-full"
                   ></img>
                 </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_2.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_3.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_4.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_5.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
               </Swiper>
             </div>
           </div>
