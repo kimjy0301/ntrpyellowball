@@ -102,6 +102,8 @@ export const shops = [
     ceo: "이철희",
     location: "경기도 군포시 고산로 166 \n SK 벤티움",
     call: "031-427-1787",
+    homepage2: "",
+    homepage3: "",
     homepage: "http://www.smashingsports.co.kr",
     category: "테니스 포함 모든 스포츠 용품",
   },
@@ -111,6 +113,8 @@ export const shops = [
     ceo: "박길택",
     location: "부산 기장군 기장읍 청강로 \n 85번길 115",
     call: "051-724-5009",
+    homepage2: "",
+    homepage3: "",
     homepage: "http://www.jujusports.co.kr",
     category: "테니스 포함 모든 스포츠 용품",
   },
@@ -121,6 +125,8 @@ export const shops = [
     location: "서울시 중구 을지로 248 \n (을지로6가, 국립중앙의료원 건너편)",
     call: "매장 : 02-2268-3663 \n 담당자 : 010-7566-8081",
 
+    homepage2: "",
+    homepage3: "",
     homepage: "https://band.us/n/aba743ee0dHas",
     category: "테니스&배드민턴&탁구&스쿼시 \n 아디다스 스페셜 스토어",
   },
@@ -131,6 +137,8 @@ export const shops = [
     location: "경기도 용인시 처인구  \n 모현읍 포은대로 896",
     call: "010-5333-6024",
     homepage: "www.sucl.co.kr",
+    homepage2: "",
+    homepage3: "",
     category: "대한민국 대표 테니스화",
   },
   {
@@ -139,9 +147,10 @@ export const shops = [
     ceo: "",
     location: "경기도 성남시 분당구 \n 수내3동 불정로 255",
     call: "031-711-0342",
-    homepage: "https://spotel.com/",
-    category:
-      "카카오채널 소식 \n https://pf.kakao.com/_xcBBad/chat \n 네이버 톡톡\n https://talk.naver.com/ct/wc4v44",
+    homepage: "https://spotel.com",
+    homepage2: "카카오채널 소식 : https://pf.kakao.com/_xcBBad/chat",
+    homepage3: "네이버 톡톡 : https://talk.naver.com/ct/wc4v44",
+    category: "",
   },
 ];
 

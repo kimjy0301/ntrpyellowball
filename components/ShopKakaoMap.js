@@ -141,13 +141,41 @@ const ShopKakaoMap = () => {
               </div>
               <div class="flex mt-1">
                 <div class="ml-1 underline">
-                  <a href="${value.homepage}" target="_blank">
+                  <a href="${value.homepage.substring(
+                    value.homepage.indexOf(":") + 1
+                  )}" target="_blank">
                     ${value.homepage
                       .replace("https://", "")
                       .replace("http://", "")}
                   </a>
                 </div>
               </div>
+              <div class="flex mt-1">
+                <div class="ml-1 underline">
+                  <a href="${value.homepage2.substring(
+                    value.homepage2.indexOf(":") + 1
+                  )}" target="_blank">
+                    ${value.homepage2
+                      .replace("https://", "")
+                      .replace("http://", "")}
+                  </a>
+                </div>
+              </div>
+              <div class="flex mt-1">
+              <div class="ml-1 underline">
+                <a href="${value.homepage3.substring(
+                  value.homepage3.indexOf(":") + 1
+                )}" target="_blank">
+                  ${value.homepage3
+                    .replace("https://", "")
+                    .replace("http://", "")}
+                </a>
+              </div>
+            </div>
+
+
+
+
               <div class="flex mt-1">
                 <div class="ml-1 overflow-auto">
                 ${value.category.replace(/\n/g, "<br/>")}
