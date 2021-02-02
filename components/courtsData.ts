@@ -227,7 +227,7 @@ export const clubs = [
     index: 8,
     name: "365ET 밴드 모임",
     court: "부천 해그늘 체육공원 6번코트",
-    location: "경기 부천시 상동 도약삼거리",
+    location: "경기도 부천시 상동 도약삼거리",
     call: "010-7337-8425",
     homepage: "https://band.us/band/78835140",
     when: "365일 매일 4시간",

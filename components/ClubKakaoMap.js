@@ -85,30 +85,38 @@ const ClubKakaoMap = () => {
             if (status === kakao.maps.services.Status.OK) {
               lat = result[0].y;
               lng = result[0].x;
+            } else {
+              console.log(value);
+              if (value.location === "경기도 부천시 상동 도약삼거리") {
+                lat = "37.5128434818024";
+                lng = "126.74978048367085";
+              }
+            }
 
-              var imageSrc = "marker.png", // 마커이미지의 주소입니다
-                imageSize = new kakao.maps.Size(35, 40), // 마커이미지의 크기입니다
-                imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+            console.log(lat);
+            var imageSrc = "marker.png", // 마커이미지의 주소입니다
+              imageSize = new kakao.maps.Size(35, 40), // 마커이미지의 크기입니다
+              imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
-              // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-              var markerImage = new kakao.maps.MarkerImage(
-                  imageSrc,
-                  imageSize,
-                  imageOption
-                ),
-                markerPosition = new kakao.maps.LatLng(lat, lng); // 마커가 표시될 위치입니다
+            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+            var markerImage = new kakao.maps.MarkerImage(
+                imageSrc,
+                imageSize,
+                imageOption
+              ),
+              markerPosition = new kakao.maps.LatLng(lat, lng); // 마커가 표시될 위치입니다
 
-              // 마커를 생성합니다
-              var marker = new kakao.maps.Marker({
-                position: markerPosition,
-                image: markerImage, // 마커이미지 설정
-                title: value.index,
-              });
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+              position: markerPosition,
+              image: markerImage, // 마커이미지 설정
+              title: value.index,
+            });
 
-              // 마커가 지도 위에 표시되도록 설정합니다
-              marker.setMap(tmpMap);
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(tmpMap);
 
-              var iwContent = `               
+            var iwContent = `               
               <div id="court-${
                 value.index
               }" class="py-3 px-4 rounded-md text-xs bg-trans07 absolute hidden flex-col justify-center shadow items-start bottom-20 -ml-28">
@@ -130,8 +138,8 @@ const ClubKakaoMap = () => {
               </div>
               <div class="flex mt-1">
                 <div class="ml-1"><a href="tel:${value.call}">${
-                  value.call
-                }</a></div>
+                value.call
+              }</a></div>
               </div>
               <div class="flex mt-1">
                 <div class="ml-1">${value.when.replace(/\n/g, "<br/>")}</div>
@@ -180,21 +188,20 @@ const ClubKakaoMap = () => {
               </div>
             </div>
             `,
-                iwPosition = new kakao.maps.LatLng(lat, lng); //인포윈도우 표시 위치입니다
+              iwPosition = new kakao.maps.LatLng(lat, lng); //인포윈도우 표시 위치입니다
 
-              tmpOverlay = new kakao.maps.CustomOverlay({
-                content: iwContent,
-                map: tmpMap,
-                position: marker.getPosition(),
-              });
+            tmpOverlay = new kakao.maps.CustomOverlay({
+              content: iwContent,
+              map: tmpMap,
+              position: marker.getPosition(),
+            });
 
-              kakao.maps.event.addListener(marker, "click", function () {
-                let divId = `court-${marker.getTitle()}`;
-                let div = document.getElementById(divId);
-                div.classList.toggle("hidden");
-                div.classList.toggle("flex");
-              });
-            }
+            kakao.maps.event.addListener(marker, "click", function () {
+              let divId = `court-${marker.getTitle()}`;
+              let div = document.getElementById(divId);
+              div.classList.toggle("hidden");
+              div.classList.toggle("flex");
+            });
           });
         });
         setMap(tmpMap);
@@ -217,6 +224,14 @@ const ClubKakaoMap = () => {
         );
         map.setLevel(5);
         map.panTo(coords);
+      } else {
+        if (address === "경기도 부천시 상동 도약삼거리") {
+          let lat = "37.5128434818024";
+          let lng = "126.74978048367085";
+          var coords = new kakao.maps.LatLng(Number(lat) + 0.005, lng);
+          map.setLevel(5);
+          map.panTo(coords);
+        }
       }
     });
     setTimeout(() => {
