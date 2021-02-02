@@ -210,7 +210,7 @@ export const clubs = [
     court: "부천 해그늘 체육공원 6번코트",
     location: "경기 부천시 상동",
     call: "010-7337-8425",
-    homepage: "",
+    homepage: "https://band.us/band/78835140",
     when: "365일 매일 4시간",
     who: "게임 가능하시분 누구나",
     dues: "입회비 없음 / 남자 월 1만원",
