@@ -37,7 +37,7 @@ const Layout = (props) => {
               autoPlay={true}
               transitionTime={500}
               infiniteLoop={true}
-              interval={2000}
+              interval={1500}
             >
               <a
                 href="https://band.us/band/55139316"
@@ -80,6 +80,28 @@ const Layout = (props) => {
                 <img
                   alt="뉴스 더테니스"
                   src={`banners/banner1.jpg`}
+                  className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
+                ></img>
+              </a>
+              <a
+                href="https://band.us/page/74449218"
+                className="block h-14"
+                target="_blank"
+              >
+                <img
+                  alt="노란공 프리마켓"
+                  src={`banners/banner5.jpg`}
+                  className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
+                ></img>
+              </a>
+              <a
+                href="https://spotel.com/"
+                className="block h-14"
+                target="_blank"
+              >
+                <img
+                  alt="스포츠코리아"
+                  src={`banners/banner6.png`}
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
               </a>

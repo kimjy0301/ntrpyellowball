@@ -16,7 +16,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>노란공테니스 - 테니스 한마디</title>
+        <title>노란공테니스 - 테니스 규칙과 매너</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-full h-full flex justify-center items-center flex-col p-3">
@@ -39,13 +39,7 @@ const index = () => {
               >
                 <SwiperSlide>
                   <img
-                    src="article/article_1.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_2.png"
+                    src="manner/manner_1.png"
                     className="w-full h-full"
                   ></img>
                 </SwiperSlide>
