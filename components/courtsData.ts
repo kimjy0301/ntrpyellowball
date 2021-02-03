@@ -13,7 +13,7 @@ export const courts = [
     name: "ES 실내 테니스장",
     location: "충북 청주시 청원구 내수읍  \n 내수로 303",
     call: "010-6681-8857",
-    homepage: "https://blog.naver.com/p139154",
+    homepage: "",
     court: "인조잔디 실내 1면, 실외 1면 ",
     etc: "남,여 샤워실 \n 옥상 볼머신 연습 하드코트",
   },
