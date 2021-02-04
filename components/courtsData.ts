@@ -1,7 +1,7 @@
 export const courts = [
   {
     index: 1,
-    name: "노란공테니스장",
+    name: "노란공테니스",
     location: "경기도 고양시 일산동구 성현로 \n 268번길 267-18",
     call: "010-5252-3366",
     homepage: "https://blog.naver.com/p139154",
