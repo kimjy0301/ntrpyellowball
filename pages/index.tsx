@@ -15,13 +15,16 @@ interface HomeProps {
 
 const Home = (props: HomeProps) => {
   const router = useRouter();
+  function refreshPage() {
+    window.parent.location.reload();
+  }
+
   return (
     <>
       <Head>
         <title>노란공테니스</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <div className="h-full overflow-y-auto md:flex md:justify-center md:items-center md:-mt-14 mx-auto">
         <div className="h-full flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8 flex-wrap">
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
@@ -133,7 +136,6 @@ const Home = (props: HomeProps) => {
               <span className="text-sm md:text-2xl">테니스 한마디</span>
             </div>
           </div>
-
           {/* <div className="w-full mt-3 ">
             <div className="ml-5 mb-3">
               <div className="text-2xl">About</div>
@@ -144,6 +146,9 @@ const Home = (props: HomeProps) => {
               <KakaoMap></KakaoMap>
             </div>
           </div> */}
+          <div className="cursor-pointer" onClick={() => refreshPage()}>
+            <img src="/img/refresh.png" className="w-32 md:hidden"></img>
+          </div>
         </div>
       </div>
     </>
