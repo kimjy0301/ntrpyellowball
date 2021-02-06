@@ -26,10 +26,10 @@ const Home = (props: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="h-full overflow-y-auto md:flex md:justify-center md:items-center md:-mt-14 mx-auto">
-        <div className="h-full flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8 flex-wrap">
+        <div className="h-full flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8">
           <div className="flex relative max-w-md justify-center items-center md:ml-5">
-            <div className="w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
-            <div className="z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
+            <div className="mt-2 w-full h-full bg-gradient-to-t from-yellow-1 to-yellow-2 transform absolute inset-0 rounded-xl -rotate-6 shadow-lg md:h-64"></div>
+            <div className="mt-2 z-10 bg-white p-5 rounded-lg shadow-lg md:h-64">
               <div className="w-full flex justify-center flex-col items-center">
                 <h1 className="text-2xl font-semibold mt-5">노란공테니스</h1>
                 <h1 className="text-sm tracking-normal">
@@ -49,7 +49,7 @@ const Home = (props: HomeProps) => {
               </h1>
             </div>
           </div>
-          <div className="flex justify-center items-center flex-row my-5 flex-wrap max-w-2xl mt-12 md:mt-0">
+          <div className="flex justify-center items-center flex-row my-5 flex-wrap max-w-2xl mt-8 md:mt-0">
             <div
               onClick={(e) => {
                 e.preventDefault();
@@ -63,7 +63,6 @@ const Home = (props: HomeProps) => {
                 <span className="text-blue-600">T</span>est
               </span>
             </div>
-
             <div
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
@@ -77,7 +76,6 @@ const Home = (props: HomeProps) => {
                 <span className="text-red-600">T</span>est
               </span>
             </div>
-
             <div
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
@@ -87,7 +85,6 @@ const Home = (props: HomeProps) => {
             >
               <span className="text-sm md:text-2xl">테니스 코트 찾기</span>
             </div>
-
             <div
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
@@ -97,7 +94,6 @@ const Home = (props: HomeProps) => {
             >
               <span className="text-sm md:text-2xl">레슨/아카데미 찾기</span>
             </div>
-
             <div
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
@@ -107,7 +103,6 @@ const Home = (props: HomeProps) => {
             >
               <span className="text-sm md:text-2xl">클럽/동호회 찾기</span>
             </div>
-
             <div
               className="flex md:m-3 md:w-72 md:shadow-lg justify-between border-yellow-1 border-2  rounded-md items-center p-4  w-2/5 bg-white mx-1 my-1 shadow-lg md:max-w-xs cursor-pointer hover:bg-yellow-1 transition-all hover:shadow-lg"
               onClick={(e) => {
@@ -136,6 +131,9 @@ const Home = (props: HomeProps) => {
               <span className="text-sm md:text-2xl">테니스 한마디</span>
             </div>
           </div>
+          <div className="cursor-pointer" onClick={() => refreshPage()}>
+            <img src="/img/refresh.png" className="w-16 md:hidden"></img>
+          </div>
           {/* <div className="w-full mt-3 ">
             <div className="ml-5 mb-3">
               <div className="text-2xl">About</div>
@@ -146,9 +144,6 @@ const Home = (props: HomeProps) => {
               <KakaoMap></KakaoMap>
             </div>
           </div> */}
-          <div className="cursor-pointer" onClick={() => refreshPage()}>
-            <img src="/img/refresh.png" className="w-32 md:hidden"></img>
-          </div>
         </div>
       </div>
     </>
