@@ -156,7 +156,7 @@ export const shops = [
     ceo: "",
     location: "경기도 성남시 분당구 \n 수내3동 불정로 255",
     call: "031-711-0342",
-    homepage: "https://spotel.com",
+    homepage: "홈페이지 : https://spotel.com",
     homepage2: "카카오채널 소식 : https://pf.kakao.com/_xcBBad/chat",
     homepage3: "네이버 톡톡 : https://talk.naver.com/ct/wc4v44",
     category: "",
