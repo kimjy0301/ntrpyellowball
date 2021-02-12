@@ -258,7 +258,7 @@ export const clubs = [
     court: "구암 테니스장",
     location: "대구 광역시 북구 구암동 70-4",
     call: "010-7337-8425",
-    homepage: "https://band.us/band/78835140",
+    homepage: "",
     when: "주중 14시~17시 \n 주말 13시~16시 \n 인조잔디 2면 사용",
     who: "테니스 열정있으신분 누구나 가능",
     dues: "입회비 5만원 / 월 1만원",
