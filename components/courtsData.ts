@@ -256,7 +256,7 @@ export const clubs = [
     index: 9,
     name: "함지TC",
     court: "구암 테니스장",
-    location: "대구 광역시 북구 구암동 70-4",
+    location: "대구 광역시 북구 구암동 70-4 ",
     call: "010-7337-8425",
     homepage: "",
     when: "주중 14시~17시 \n 주말 13시~16시 \n 인조잔디 2면 사용",
