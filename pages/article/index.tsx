@@ -39,6 +39,108 @@ const index = () => {
               >
                 <SwiperSlide>
                   <img
+                    src="article/article_12.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_13.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_14.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_15.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_16.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_17.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_18.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_19.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_20.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_21.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_22.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_23.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_24.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_25.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_26.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_27.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_28.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
                     src="article/article_1.png"
                     className="w-full h-full"
                   ></img>
