@@ -103,6 +103,54 @@ const index = () => {
                     className="w-full h-full"
                   ></img>
                 </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_12.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_13.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_14.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_15.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_16.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_17.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_18.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="manner/manner_19.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
               </Swiper>
             </div>
           </div>

@@ -39,6 +39,72 @@ const index = () => {
               >
                 <SwiperSlide>
                   <img
+                    src="article/article_1.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_2.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_3.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_4.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_5.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_6.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_7.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_8.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_9.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_10.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="article/article_11.png"
+                    className="w-full h-full"
+                  ></img>
+                </SwiperSlide>{" "}
+                <SwiperSlide>
+                  <img
                     src="article/article_12.png"
                     className="w-full h-full"
                   ></img>
@@ -136,72 +202,6 @@ const index = () => {
                 <SwiperSlide>
                   <img
                     src="article/article_28.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_1.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_2.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_3.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_4.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_5.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_6.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_7.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_8.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_9.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_10.png"
-                    className="w-full h-full"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="article/article_11.png"
                     className="w-full h-full"
                   ></img>
                 </SwiperSlide>
