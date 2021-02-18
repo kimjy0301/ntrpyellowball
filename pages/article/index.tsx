@@ -36,6 +36,7 @@ const index = () => {
                 slidesPerView={1}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
+                loop={true}
               >
                 <SwiperSlide>
                   <img
