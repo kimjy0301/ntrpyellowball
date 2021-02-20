@@ -62,28 +62,6 @@ const Layout = (props) => {
                 ></img>
               </a>
               <a
-                href="http://the-tennis.com/"
-                className="block h-14"
-                target="_blank"
-              >
-                <img
-                  src={`banners/banner2.jpg`}
-                  alt="더테니스"
-                  className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
-                ></img>
-              </a>
-              <a
-                href="https://band.us/band/61888607"
-                className="block h-14"
-                target="_blank"
-              >
-                <img
-                  alt="뉴스 더테니스"
-                  src={`banners/banner1.jpg`}
-                  className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
-                ></img>
-              </a>
-              <a
                 href="https://band.us/page/74449218"
                 className="block h-14"
                 target="_blank"
@@ -102,6 +80,28 @@ const Layout = (props) => {
                 <img
                   alt="스포츠코리아"
                   src={`banners/banner6.png`}
+                  className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
+                ></img>
+              </a>
+              <a
+                href="http://www.modeunmat.co.kr/product/list.html?cate_no=75"
+                className="block h-14"
+                target="_blank"
+              >
+                <img
+                  alt="모든매트"
+                  src={`banners/banner7.png`}
+                  className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
+                ></img>
+              </a>
+              <a
+                href="http://www.modeunmat.co.kr/product/list.html?cate_no=75"
+                className="block h-14"
+                target="_blank"
+              >
+                <img
+                  alt="모든매트"
+                  src={`banners/banner8.png`}
                   className="h-14 transform hover:scale-110 focus:scale-110 transition-all "
                 ></img>
               </a>
