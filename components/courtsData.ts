@@ -17,6 +17,15 @@ export const courts = [
     court: "인조잔디 실내 1면, 실외 1면 ",
     etc: "남,여 샤워실 \n 옥상 볼머신 연습 하드코트",
   },
+  {
+    index: 3,
+    name: "숲속 실내테니스",
+    location: "경기도 여주시 가남읍  \n  상활2길 70-30",
+    call: "010-2726-7814",
+    homepage: "",
+    court: "실내 2면 인조잔디",
+    etc: "실외 3면 인조잔디",
+  },
 ];
 
 export const academies = [
