@@ -117,7 +117,7 @@ export const academies = [
     location: "경기도 오산시 청학동 156-1",
     call: "강지훈 코치 / 010-5177-2676",
     homepage: "",
-    court: "실외 하드코트 2면 [국제규격]",
+    court: "실외 하드코트 10면 [국제규격]",
     etc: "남녀 샤워실과 넉넉한 주차장",
   },
 ];
