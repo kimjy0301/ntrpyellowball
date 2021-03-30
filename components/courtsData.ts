@@ -114,8 +114,8 @@ export const academies = [
   {
     index: 10,
     name: "오산시립 테니스장",
-    location: "경기도 오산시 청학동 156-1 \n 강지훈 코치",
-    call: "010-5177-2676",
+    location: "경기도 오산시 청학동 156-1",
+    call: "강지훈 코치 / 010-5177-2676",
     homepage: "",
     court: "실외 하드코트 2면 [국제규격]",
     etc: "남녀 샤워실과 넉넉한 주차장",
