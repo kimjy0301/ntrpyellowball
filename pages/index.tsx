@@ -24,6 +24,24 @@ const Home = (props: HomeProps) => {
       <Head>
         <title>노란공테니스</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content={"노란공테니스"} key="twhandle" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:url"
+          content={"https://yellowball.co.kr/"}
+          key="ogurl"
+        />
+        <meta property="og:image" content={`BI-vertical.png`} key="ogimage" />
+        <meta
+          property="og:site_name"
+          content={"노란공테니스"}
+          key="ogsitename"
+        />
+        <meta property="og:title" content={"노란공테니스"} key="ogtitle" />
+        <meta property="og:description" content={"노란공테니스"} key="ogdesc" />
       </Head>
       <div className="h-full overflow-y-auto md:flex md:justify-center md:items-center md:-mt-14 mx-auto">
         <div className="h-full flex flex-col w-screen justify-center items-center md:flex-row md:justify-between max-w-7xl mx-auto py-8">
